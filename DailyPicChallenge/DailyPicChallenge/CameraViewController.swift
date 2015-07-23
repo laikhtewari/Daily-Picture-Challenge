@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if (UIImagePickerController.isCameraDeviceAvailable(.Rear))
+        {
+            let captureSession = AVCaptureSession()
+        }
         // Do any additional setup after loading the view.
     }
 

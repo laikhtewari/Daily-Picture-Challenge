@@ -32,6 +32,8 @@
 		CB7679291B5D944D00E91F14 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679281B5D944D00E91F14 /* libsqlite3.dylib */; };
 		CB76792B1B5D95F800E91F14 /* TodaysPicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76792A1B5D95F800E91F14 /* TodaysPicsViewController.swift */; };
 		CB76792D1B5D960800E91F14 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76792C1B5D960800E91F14 /* CameraViewController.swift */; };
+		CB76792F1B5EAFA300E91F14 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76792E1B5EAFA300E91F14 /* Picture.swift */; };
+		CB767B171B615FA900E91F14 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB767B161B615FA800E91F14 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		CB7679281B5D944D00E91F14 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CB76792A1B5D95F800E91F14 /* TodaysPicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaysPicsViewController.swift; sourceTree = "<group>"; };
 		CB76792C1B5D960800E91F14 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CB76792E1B5EAFA300E91F14 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		CB767B161B615FA800E91F14 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				CB7678E31B5D93BF00E91F14 /* Supporting Files */,
 				CB76792A1B5D95F800E91F14 /* TodaysPicsViewController.swift */,
 				CB76792C1B5D960800E91F14 /* CameraViewController.swift */,
+				CB76792E1B5EAFA300E91F14 /* Picture.swift */,
+				CB767B161B615FA800E91F14 /* Post.swift */,
 			);
 			path = DailyPicChallenge;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				TargetAttributes = {
 					CB7678DF1B5D93BF00E91F14 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = WY2666SGG8;
 					};
 					CB7678F41B5D93BF00E91F14 = {
 						CreatedOnToolsVersion = 6.4;
@@ -295,9 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB76792F1B5EAFA300E91F14 /* Picture.swift in Sources */,
 				CB7678E61B5D93BF00E91F14 /* AppDelegate.swift in Sources */,
 				CB76792B1B5D95F800E91F14 /* TodaysPicsViewController.swift in Sources */,
 				CB76792D1B5D960800E91F14 /* CameraViewController.swift in Sources */,
+				CB767B171B615FA900E91F14 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +435,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -433,6 +444,7 @@
 				INFOPLIST_FILE = DailyPicChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -440,6 +452,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -447,6 +461,7 @@
 				INFOPLIST_FILE = DailyPicChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

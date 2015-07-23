@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Parse
 
 class TodaysPicsViewController: UIViewController {
 
+    var pic: Picture?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.tabBarController?.delegate = self
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +25,19 @@ class TodaysPicsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func takePhoto() {
+        // instantiate photo taking class, provide callback for when photo  is selected
+        pic = Picture(viewController: self.tabBarController!, callback: { (image: UIImage?) in
+            let imageData = UIImageJPEGRepresentation(image, 0.8)
+            let imageFile = PFFile(data: imageData)
+            imageFile.saveInBackgroundWithBlock(nil)
+            
+            let post = Post()
+            post.image = image
+            post.uploadPost()
+        })
+            // don't do anything, yet...
+    }
 
     /*
     // MARK: - Navigation
@@ -32,4 +49,17 @@ class TodaysPicsViewController: UIViewController {
     }
     */
 
+}
+
+extension TodaysPicsViewController: UITabBarControllerDelegate {
+    
+    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+        if (viewController is CameraViewController) {
+            takePhoto()
+            return false
+        } else {
+            return true
+        }
+    }
+    
 }

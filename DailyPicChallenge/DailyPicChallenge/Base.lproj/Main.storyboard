@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="2E7-8P-Kuy"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="people" id="2E7-8P-Kuy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8d-ha-fvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="q0o-Sz-3r4"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="people" id="q0o-Sz-3r4">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i55-Sm-1m5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,4 +68,7 @@
             <point key="canvasLocation" x="-683" y="-150"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="people" width="42" height="42"/>
+    </resources>
 </document>
