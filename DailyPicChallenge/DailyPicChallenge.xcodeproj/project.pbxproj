@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB23306F1B62DFBF00C99A75 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23306E1B62DFBF00C99A75 /* Challenge.swift */; };
 		CB7678E61B5D93BF00E91F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */; };
 		CB7678EB1B5D93BF00E91F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7678E91B5D93BF00E91F14 /* Main.storyboard */; };
 		CB7678ED1B5D93BF00E91F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7678EC1B5D93BF00E91F14 /* Images.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB23306E1B62DFBF00C99A75 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		CB7678E01B5D93BF00E91F14 /* DailyPicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7678E41B5D93BF00E91F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				CB76792C1B5D960800E91F14 /* CameraViewController.swift */,
 				CB76792E1B5EAFA300E91F14 /* Picture.swift */,
 				CB767B161B615FA800E91F14 /* Post.swift */,
+				CB23306E1B62DFBF00C99A75 /* Challenge.swift */,
 			);
 			path = DailyPicChallenge;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB76792F1B5EAFA300E91F14 /* Picture.swift in Sources */,
+				CB23306F1B62DFBF00C99A75 /* Challenge.swift in Sources */,
 				CB7678E61B5D93BF00E91F14 /* AppDelegate.swift in Sources */,
 				CB76792B1B5D95F800E91F14 /* TodaysPicsViewController.swift in Sources */,
 				CB76792D1B5D960800E91F14 /* CameraViewController.swift in Sources */,
@@ -518,6 +522,7 @@
 				CB7679011B5D93BF00E91F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB7679021B5D93BF00E91F14 /* Build configuration list for PBXNativeTarget "DailyPicChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				CB7679041B5D93BF00E91F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

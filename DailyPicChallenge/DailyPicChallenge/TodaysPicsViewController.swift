@@ -11,13 +11,52 @@ import Parse
 
 class TodaysPicsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var challengeLabel: UILabel!
+    
+    var posts: [Post] = []
+    
+    
     var pic: Picture?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tabBarController?.delegate = self
+        self.tableView.dataSource = self
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let challengeQuery = Challenge.query()
+        let currentDate = NSDate()
+        challengeQuery?.whereKey("endDate", greaterThanOrEqualTo: currentDate)
+        challengeQuery?.whereKey("startDate", lessThanOrEqualTo: currentDate)
+        let todaysChallenge = challengeQuery?.getFirstObject()
+        let todaysChallengeString = todaysChallenge!["challenge"] as! String
+        
+        println(todaysChallengeString)
+        
+        challengeLabel.text = todaysChallengeString
+        
+        //let todaysChallengeID = todaysChallenge?.objectId
+        
+        let todaysPostsQuery = Post.query()
+        todaysPostsQuery?.whereKey("challenge", equalTo: todaysChallenge!)
+        
+        todaysPostsQuery!.orderByDescending("createdAt")
+        
+        todaysPostsQuery!.findObjectsInBackgroundWithBlock {
+            (result: [AnyObject]?, error: NSError?) -> Void in
+            // 8
+            self.posts = result as? [Post] ?? []
+            // 9
+            self.tableView.reloadData()
+            
+            println("set table view with place holders")
+            
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +99,24 @@ extension TodaysPicsViewController: UITabBarControllerDelegate {
         } else {
             return true
         }
+    }
+    
+}
+
+extension TodaysPicsViewController: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // 1
+        return posts.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // 2
+        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! UITableViewCell
+        
+        cell.textLabel!.text = "Post"
+        
+        return cell
     }
     
 }
