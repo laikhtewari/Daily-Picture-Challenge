@@ -10,6 +10,7 @@
 		CB23306F1B62DFBF00C99A75 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23306E1B62DFBF00C99A75 /* Challenge.swift */; };
 		CB2330711B63599D00C99A75 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330701B63599D00C99A75 /* PostTableViewCell.swift */; };
 		CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330721B635F1E00C99A75 /* ParseHelper.swift */; };
+		CB433E9E1B66F76A007A124C /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB433E9D1B66F76A007A124C /* Vote.swift */; };
 		CB7678E61B5D93BF00E91F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */; };
 		CB7678EB1B5D93BF00E91F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7678E91B5D93BF00E91F14 /* Main.storyboard */; };
 		CB7678ED1B5D93BF00E91F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7678EC1B5D93BF00E91F14 /* Images.xcassets */; };
@@ -53,6 +54,7 @@
 		CB23306E1B62DFBF00C99A75 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		CB2330701B63599D00C99A75 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		CB2330721B635F1E00C99A75 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		CB433E9D1B66F76A007A124C /* Vote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		CB7678E01B5D93BF00E91F14 /* DailyPicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7678E41B5D93BF00E91F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				CB23306E1B62DFBF00C99A75 /* Challenge.swift */,
 				CB2330701B63599D00C99A75 /* PostTableViewCell.swift */,
 				CB2330721B635F1E00C99A75 /* ParseHelper.swift */,
+				CB433E9D1B66F76A007A124C /* Vote.swift */,
 			);
 			path = DailyPicChallenge;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				CB76792B1B5D95F800E91F14 /* TodaysPicsViewController.swift in Sources */,
 				CB76792D1B5D960800E91F14 /* CameraViewController.swift in Sources */,
 				CB767B171B615FA900E91F14 /* Post.swift in Sources */,
+				CB433E9E1B66F76A007A124C /* Vote.swift in Sources */,
 				CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

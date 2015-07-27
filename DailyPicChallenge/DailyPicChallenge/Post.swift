@@ -66,9 +66,12 @@ class Post: PFObject, PFSubclassing {
         imageFile.saveInBackgroundWithBlock(nil)
             
         user = PFUser.currentUser()
+        self["fromUser"] = user
             
         self.imageFile = imageFile
         self.saveInBackgroundWithBlock(nil)
+        
+        println("uploaded")
     }
     
 }

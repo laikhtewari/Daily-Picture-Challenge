@@ -19,7 +19,6 @@ class ParseHelper {
         challengeQuery?.whereKey("startDate", lessThanOrEqualTo: currentDate)
         let todaysChallenge = challengeQuery?.getFirstObject()
         let todaysChallengeString: String!
-        println ("\(todaysChallenge)")
         
         if let challengeObject = todaysChallenge
         {
@@ -39,5 +38,10 @@ class ParseHelper {
             
             todaysPostsQuery!.orderByDescending("createdAt")
         }
+    }
+    
+    static func addChallengeToPost ( post: PFObject, challenge: PFObject )
+    {
+        post["challenge"] = challenge
     }
 }

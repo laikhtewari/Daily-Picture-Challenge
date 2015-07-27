@@ -1,23 +1,22 @@
 //
-//  Challenge.swift
+//  Vote.swift
 //  DailyPicChallenge
 //
-//  Created by Laikh Tewari on 7/24/15.
+//  Created by Laikh Tewari on 7/27/15.
 //  Copyright (c) 2015 Laikh Tewari. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class Challenge: PFObject, PFSubclassing {
-    
-    var challenge: String!
-    
+class Vote: PFObject, PFSubclassing {
+
     static func parseClassName() -> String {
-        return "Challenges"
+        return "Vote"
     }
     
-    override init () {
+    override init ()
+    {
         super.init()
     }
     
@@ -27,10 +26,4 @@ class Challenge: PFObject, PFSubclassing {
             self.registerSubclass()
         }
     }
-    
-    func createChallenge ( challenge: String )
-    {
-        self.challenge = challenge
-    }
-   
 }

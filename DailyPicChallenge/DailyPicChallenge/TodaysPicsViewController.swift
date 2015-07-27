@@ -15,6 +15,8 @@ class TodaysPicsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var challengeLabel: UILabel!
     
+    var challenge: PFObject!
+    
     var posts: [Post] = []
     
     
@@ -41,6 +43,8 @@ class TodaysPicsViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
 
         let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
+        challenge = todaysChallenge
+        println("\(challenge)")
         let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
         
         challengeLabel.text = todaysChallengeString
@@ -84,7 +88,11 @@ class TodaysPicsViewController: UIViewController {
             
                 let post = Post()
                 post.image = image
+                let pfPost = post as PFObject
+                ParseHelper.addChallengeToPost(pfPost, challenge: self.challenge)
                 post.uploadPost()
+                
+                self.tableView.reloadData()
             })
         }
         
