@@ -28,6 +28,16 @@ class TodaysPicsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    static func displayAlert(alertTitle: String, alertMessage: String){
+        /*
+        var alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)d
+        */
+        let alertView = UIAlertView(title: alertTitle, message: alertMessage, delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
+    }
+    
     override func viewDidAppear(animated: Bool) {
 
         let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
@@ -43,6 +53,14 @@ class TodaysPicsViewController: UIViewController {
             (result: [AnyObject]?, error: NSError?) -> Void in
             // 8
             self.posts = result as? [Post] ?? []
+            
+            for post in self.posts {
+                // 2
+                let data = post.imageFile?.getData()
+                // 3
+                post.image = UIImage(data: data!, scale:1.0)
+            }
+
             // 9
             self.tableView.reloadData()
             
@@ -57,15 +75,23 @@ class TodaysPicsViewController: UIViewController {
     
     func takePhoto() {
         // instantiate photo taking class, provide callback for when photo  is selected
-        pic = Picture(viewController: self.tabBarController!, callback: { (image: UIImage?) in
-            let imageData = UIImageJPEGRepresentation(image, 0.8)
-            let imageFile = PFFile(data: imageData)
-            imageFile.saveInBackgroundWithBlock(nil)
+        if (UIImagePickerController.isCameraDeviceAvailable(.Rear))
+        {
+            pic = Picture(viewController: self.tabBarController!, callback: { (image: UIImage?) in
+                let imageData = UIImageJPEGRepresentation(image, 0.8)
+                let imageFile = PFFile(data: imageData)
+                imageFile.saveInBackgroundWithBlock(nil)
             
-            let post = Post()
-            post.image = image
-            post.uploadPost()
-        })
+                let post = Post()
+                post.image = image
+                post.uploadPost()
+            })
+        }
+        
+        else {
+            let alertView = UIAlertView(title: "Error", message: "Camera unavailable", delegate: nil, cancelButtonTitle: "OK")
+            alertView.show()
+        }
             // don't do anything, yet...
     }
 

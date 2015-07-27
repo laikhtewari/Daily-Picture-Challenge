@@ -18,15 +18,26 @@ class ParseHelper {
         challengeQuery?.whereKey("endDate", greaterThanOrEqualTo: currentDate)
         challengeQuery?.whereKey("startDate", lessThanOrEqualTo: currentDate)
         let todaysChallenge = challengeQuery?.getFirstObject()
-        let todaysChallengeString = todaysChallenge!["challenge"] as! String
+        let todaysChallengeString: String!
+        println ("\(todaysChallenge)")
         
-        return (todaysChallengeString, todaysChallenge)
+        if let challengeObject = todaysChallenge
+        {
+            todaysChallengeString = challengeObject["challenge"] as! String
+            return (todaysChallengeString, todaysChallenge)
+        } else {
+            TodaysPicsViewController.displayAlert("Error", alertMessage: "Unable to retrieve today's challenge")
+            return ("No Challenge", todaysChallenge)
+        }
     }
     
     static func todaysPosts ( todaysChallenge: PFObject?, todaysPostsQuery: PFQuery? )
     {
-        todaysPostsQuery?.whereKey("challenge", equalTo: todaysChallenge!)
-        
-    todaysPostsQuery!.orderByDescending("createdAt")
+        if let challengeObject = todaysChallenge
+        {
+            todaysPostsQuery?.whereKey("challenge", equalTo: challengeObject)
+            
+            todaysPostsQuery!.orderByDescending("createdAt")
+        }
     }
 }
