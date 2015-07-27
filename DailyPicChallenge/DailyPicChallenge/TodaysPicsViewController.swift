@@ -11,6 +11,7 @@ import Parse
 
 class TodaysPicsViewController: UIViewController {
 
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var challengeLabel: UILabel!
     
@@ -28,23 +29,15 @@ class TodaysPicsViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        let challengeQuery = Challenge.query()
-        let currentDate = NSDate()
-        challengeQuery?.whereKey("endDate", greaterThanOrEqualTo: currentDate)
-        challengeQuery?.whereKey("startDate", lessThanOrEqualTo: currentDate)
-        let todaysChallenge = challengeQuery?.getFirstObject()
-        let todaysChallengeString = todaysChallenge!["challenge"] as! String
-        
-        println(todaysChallengeString)
+
+        let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
+        let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
         
         challengeLabel.text = todaysChallengeString
         
-        //let todaysChallengeID = todaysChallenge?.objectId
-        
         let todaysPostsQuery = Post.query()
-        todaysPostsQuery?.whereKey("challenge", equalTo: todaysChallenge!)
         
-        todaysPostsQuery!.orderByDescending("createdAt")
+        ParseHelper.todaysPosts(todaysChallenge, todaysPostsQuery: todaysPostsQuery)
         
         todaysPostsQuery!.findObjectsInBackgroundWithBlock {
             (result: [AnyObject]?, error: NSError?) -> Void in
@@ -52,8 +45,6 @@ class TodaysPicsViewController: UIViewController {
             self.posts = result as? [Post] ?? []
             // 9
             self.tableView.reloadData()
-            
-            println("set table view with place holders")
             
         }
     
@@ -112,9 +103,9 @@ extension TodaysPicsViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // 2
-        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostTableViewCell
         
-        cell.textLabel!.text = "Post"
+        cell.postImageView.image = posts[indexPath.row].image
         
         return cell
     }
