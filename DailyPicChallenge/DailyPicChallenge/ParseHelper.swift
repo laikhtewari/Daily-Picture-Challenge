@@ -44,4 +44,30 @@ class ParseHelper {
     {
         post["challenge"] = challenge
     }
+    
+    static func vote ( fromUser: PFUser, toPost: PFObject )
+    {
+        let vote = Vote()
+        vote["fromUser"] = fromUser
+        vote["toPicture"] = toPost
+        
+        vote.saveInBackgroundWithBlock(nil)
+    }
+    
+    static func unvote ( fromUser: PFUser, toPost: PFObject)
+    {
+        let voteQuery = Vote.query()
+        voteQuery?.whereKey("fromUser", equalTo: fromUser)
+        voteQuery?.whereKey("toPicture", equalTo: toPost)
+        
+        voteQuery!.findObjectsInBackgroundWithBlock {
+            (results: [AnyObject]?, error: NSError?) -> Void in
+            // 2
+            if let results = results as? [PFObject] {
+                for votes in results {
+                    votes.deleteInBackgroundWithBlock(nil)
+                }
+            }
+        }
+    }
 }

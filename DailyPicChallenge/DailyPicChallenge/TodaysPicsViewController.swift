@@ -44,7 +44,6 @@ class TodaysPicsViewController: UIViewController {
 
         let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
         challenge = todaysChallenge
-        println("\(challenge)")
         let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
         
         challengeLabel.text = todaysChallengeString
@@ -113,6 +112,9 @@ class TodaysPicsViewController: UIViewController {
     }
     */
 
+    @IBAction func voteButtonTapped(sender: AnyObject) {
+        
+    }
 }
 
 extension TodaysPicsViewController: UITabBarControllerDelegate {
