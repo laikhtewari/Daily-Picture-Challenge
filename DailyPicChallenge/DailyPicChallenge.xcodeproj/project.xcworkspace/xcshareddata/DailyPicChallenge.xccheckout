@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>38C6CB19-6D6C-4C17-B9BD-D0D49B1CB03B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>DailyPicChallenge</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>601045F0200BE9634ACF3A6E11069DF00DDA970F</key>
 		<string>https://github.com/laikhtewari/Daily-Picture-Challenge.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DailyPicChallenge/DailyPicChallenge.xcodeproj/project.xcworkspace</string>
+	<string>DailyPicChallenge/DailyPicChallenge.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>601045F0200BE9634ACF3A6E11069DF00DDA970F</key>

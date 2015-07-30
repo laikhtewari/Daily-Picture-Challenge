@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1186464683AADCA150737B5 /* Pods_DailyPicChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D880F71F3EF384980CC820 /* Pods_DailyPicChallenge.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CB23306F1B62DFBF00C99A75 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23306E1B62DFBF00C99A75 /* Challenge.swift */; };
 		CB2330711B63599D00C99A75 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330701B63599D00C99A75 /* PostTableViewCell.swift */; };
 		CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330721B635F1E00C99A75 /* ParseHelper.swift */; };
@@ -22,7 +23,6 @@
 		CB76790F1B5D93F200E91F14 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679091B5D93F200E91F14 /* ParseFacebookUtils.framework */; };
 		CB7679101B5D93F200E91F14 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB76790A1B5D93F200E91F14 /* ParseFacebookUtilsV4.framework */; };
 		CB7679111B5D93F200E91F14 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB76790B1B5D93F200E91F14 /* ParseUI.framework */; };
-		CB7679131B5D93FF00E91F14 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679121B5D93FF00E91F14 /* Accounts.framework */; };
 		CB7679151B5D940A00E91F14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679141B5D940A00E91F14 /* AudioToolbox.framework */; };
 		CB7679171B5D941000E91F14 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679161B5D941000E91F14 /* CFNetwork.framework */; };
 		CB7679191B5D941400E91F14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679181B5D941400E91F14 /* CoreGraphics.framework */; };
@@ -38,6 +38,7 @@
 		CB76792D1B5D960800E91F14 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76792C1B5D960800E91F14 /* CameraViewController.swift */; };
 		CB76792F1B5EAFA300E91F14 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76792E1B5EAFA300E91F14 /* Picture.swift */; };
 		CB767B171B615FA900E91F14 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB767B161B615FA800E91F14 /* Post.swift */; };
+		CB88FAF41B6976E00007FBFC /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB88FAF31B6976E00007FBFC /* Bond.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		566C9501149FCB51620BEEF5 /* Pods-DailyPicChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPicChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		93D880F71F3EF384980CC820 /* Pods_DailyPicChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPicChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB23306E1B62DFBF00C99A75 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		CB2330701B63599D00C99A75 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		CB2330721B635F1E00C99A75 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 		CB76792C1B5D960800E91F14 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		CB76792E1B5EAFA300E91F14 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		CB767B161B615FA800E91F14 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CB88FAF31B6976E00007FBFC /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = "Pods/../build/Debug-iphoneos/Pods-DailyPicChallenge/Bond.framework"; sourceTree = "<group>"; };
+		EFAC237CBF9241288B5465E5 /* Pods-DailyPicChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPicChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB88FAF41B6976E00007FBFC /* Bond.framework in Frameworks */,
 				CB7679291B5D944D00E91F14 /* libsqlite3.dylib in Frameworks */,
 				CB7679271B5D944600E91F14 /* libz.dylib in Frameworks */,
 				CB7679251B5D944000E91F14 /* SystemConfiguration.framework in Frameworks */,
@@ -104,13 +110,13 @@
 				CB7679191B5D941400E91F14 /* CoreGraphics.framework in Frameworks */,
 				CB7679171B5D941000E91F14 /* CFNetwork.framework in Frameworks */,
 				CB7679151B5D940A00E91F14 /* AudioToolbox.framework in Frameworks */,
-				CB7679131B5D93FF00E91F14 /* Accounts.framework in Frameworks */,
 				CB7679111B5D93F200E91F14 /* ParseUI.framework in Frameworks */,
 				CB76790D1B5D93F200E91F14 /* Parse.framework in Frameworks */,
 				CB76790E1B5D93F200E91F14 /* ParseCrashReporting.framework in Frameworks */,
 				CB76790F1B5D93F200E91F14 /* ParseFacebookUtils.framework in Frameworks */,
 				CB76790C1B5D93F200E91F14 /* Bolts.framework in Frameworks */,
 				CB7679101B5D93F200E91F14 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				B1186464683AADCA150737B5 /* Pods_DailyPicChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEC0722A2A1E5B4599D33971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB88FAF31B6976E00007FBFC /* Bond.framework */,
+				93D880F71F3EF384980CC820 /* Pods_DailyPicChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB7678D71B5D93BF00E91F14 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +158,8 @@
 				CB7678E21B5D93BF00E91F14 /* DailyPicChallenge */,
 				CB7678F81B5D93BF00E91F14 /* DailyPicChallengeTests */,
 				CB7678E11B5D93BF00E91F14 /* Products */,
+				CF62B6FFC26C60741D9F94BE /* Pods */,
+				BEC0722A2A1E5B4599D33971 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +230,15 @@
 			path = "parse-library-1";
 			sourceTree = "<group>";
 		};
+		CF62B6FFC26C60741D9F94BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC237CBF9241288B5465E5 /* Pods-DailyPicChallenge.debug.xcconfig */,
+				566C9501149FCB51620BEEF5 /* Pods-DailyPicChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB7678FF1B5D93BF00E91F14 /* Build configuration list for PBXNativeTarget "DailyPicChallenge" */;
 			buildPhases = (
+				2B196CFF3336A000F3C7F278 /* Check Pods Manifest.lock */,
 				CB7678DC1B5D93BF00E91F14 /* Sources */,
 				CB7678DD1B5D93BF00E91F14 /* Frameworks */,
 				CB7678DE1B5D93BF00E91F14 /* Resources */,
+				75295C8232BEAAB63826AE41 /* Embed Pods Frameworks */,
+				B79005176A310497029E8C6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +337,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B196CFF3336A000F3C7F278 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75295C8232BEAAB63826AE41 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B79005176A310497029E8C6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB7678DC1B5D93BF00E91F14 /* Sources */ = {
@@ -403,6 +480,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +519,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -449,14 +528,21 @@
 		};
 		CB7679001B5D93BF00E91F14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAC237CBF9241288B5465E5 /* Pods-DailyPicChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-DailyPicChallenge",
 				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = DailyPicChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,14 +552,21 @@
 		};
 		CB7679011B5D93BF00E91F14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566C9501149FCB51620BEEF5 /* Pods-DailyPicChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-DailyPicChallenge",
 				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = DailyPicChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

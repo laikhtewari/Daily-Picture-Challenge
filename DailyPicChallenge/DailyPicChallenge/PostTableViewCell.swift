@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Bond
 
 class PostTableViewCell: UITableViewCell {
 
@@ -21,6 +22,17 @@ class PostTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    var post:Post? {
+        didSet {
+            // 1
+            if let post = post {
+                //2
+                // bind the image of the post to the 'postImage' view
+               // post.image ->> postImageView
+            }
+        }
     }
 
 }
