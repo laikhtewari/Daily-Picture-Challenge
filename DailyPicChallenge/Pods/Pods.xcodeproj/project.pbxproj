@@ -7,284 +7,617 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00349B9355BE6B8B69E9B15B /* Bond+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4731910FF74285B1B5429A1 /* Bond+UITableView.swift */; };
-		0596C67B8977AA567B97B4BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699688A050C9659D67B42767 /* Foundation.framework */; };
-		09A20D272926EDA98E962856 /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = E8463B3CB2291BF6825A5A85 /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AE42E1EF0D8260C3B87B5C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75960D6A03B4A5473C63E1DF /* SystemConfiguration.framework */; };
-		1A9503895E69A6B8055BF598 /* Bond+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CD8A55E4F6EFCB56EC18 /* Bond+UISlider.swift */; };
-		207EDB939AFB4E48F5E0CE0C /* Bond+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFE39B36DB5B4F34CDCABA /* Bond+UIButton.swift */; };
-		2A3DA8BA4997FBB022A28EC0 /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EB8DFEBCB2ADCEFF11F55 /* Bond.swift */; };
-		2D6749AE2D8C6A6FD7143EA4 /* Bond+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C45DEED91EB83CA1040ED8B /* Bond+UIImageView.swift */; };
-		2FD8EB54E0F5930D1CB6C65B /* Bond+UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED714FC9A5AA17BA433845C7 /* Bond+UIProgressView.swift */; };
-		3F9FFD0D343AFA274E4A60EA /* Bond+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9ADED333F37A16878EAC4 /* Bond+UISwitch.swift */; };
-		403AC6097A54BE8521252A4C /* Bond+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DEF19AC6C718442268270 /* Bond+Foundation.swift */; };
-		598D0887D4B841CDC2215D13 /* Bond+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1872633F5283D90484918F2 /* Bond+UILabel.swift */; };
-		59B3524CB2113B09F195DD93 /* Bond+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55061A07A8828D9FD27595E /* Bond+UICollectionView.swift */; };
-		5D39ECE963D5FC581C5158BC /* Bond+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539535B8633172C8D0DFEA2C /* Bond+Functional.swift */; };
-		5ED9B062F079AAE6ECC17067 /* Bond+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB05A18F70494C1E554AE2F /* Bond+UINavigationItem.swift */; };
-		67ABE12DAE70156FEC9D92B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699688A050C9659D67B42767 /* Foundation.framework */; };
-		7374AB5A838397CD63C1ECC1 /* Bond+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5476DE3FD888E3E348AEBC38 /* Bond+UITextView.swift */; };
-		787162CBF867B0D52CABC9EB /* Bond+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B895803A38AE112B6CCCC9B /* Bond+Operators.swift */; };
-		8604B5BF0A8B9E937EBC670B /* Bond+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776169151BA9994623CC09C /* Bond+UIActivityIndicatorView.swift */; };
-		9B5BD29481D9E37B0536C4EF /* Pods-DailyPicChallenge-Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF62AA2F3A62C044B9B0599 /* Pods-DailyPicChallenge-Bond-dummy.m */; };
-		A12CD5E79BF8C2643CAAA930 /* Bond+UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA17CFD6B780FBFF314D91 /* Bond+UIBarItem.swift */; };
-		A403A8A6076D13A8FFA5C287 /* Bond+Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B16B90F2DB6A21F2C3A3 /* Bond+Arrays.swift */; };
-		A95F4EA2A64A580B970F6976 /* Bond+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE851D9E3F1727317A8AABAB /* Bond+UITextField.swift */; };
-		AC96C24CDE6369DDE07C6245 /* Bond+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8893AB0683DFC844C61EA5 /* Bond+UIView.swift */; };
-		B404C8CCDFF2F09912A5D8F8 /* Pods-DailyPicChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF571A66CF812BD21F0B669 /* Pods-DailyPicChallenge-dummy.m */; };
-		D3B9D4F3A7A7CCDAE71C68A7 /* Bond+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31967352FE1FC2C7ABDD40 /* Bond+UIDatePicker.swift */; };
-		DD5638072733C4AFF2E9C32F /* Pods-DailyPicChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D5F95B566554AE070ACCAB /* Pods-DailyPicChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF9A523A2F6ED1C5664415C2 /* Bond+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E49528F60DFB741E06D6C6 /* Bond+CALayer.swift */; };
-		E8483E0012B9B0CC60B4A780 /* Pods-DailyPicChallenge-Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB36151DEBD1E970672F0B8E /* Pods-DailyPicChallenge-Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5D1354E26F542B359370502 /* Bond+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767F8C85F48C440CB78AEC5 /* Bond+NSLayoutConstraint.swift */; };
+		035ECB8EF2D5E3858BAB7B49 /* Bond+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8600C77D6EF47B26BF0E49 /* Bond+Functional.swift */; };
+		0541D93F336FEC59B26E3851 /* Bond+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCEE1CB0937D1E3E3D79CC /* Bond+UISlider.swift */; };
+		0DC270701AAEC188E93E016D /* Pods-DailyPicChallenge-Parse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE60A7D3ED17B0343E8D10E /* Pods-DailyPicChallenge-Parse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E1E43DBCB9B92AB5EF135C4 /* Bond+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24FCC0829F025D19C2396B /* Bond+Foundation.swift */; };
+		0E4A854311F576F09EDDF171 /* BFCancellationTokenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B1285A3DBFE6108E19C5C /* BFCancellationTokenSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		16C2DEA7E88E532FFBEEDEA5 /* PFGeoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = B110FA743DAEC9F80A4E808D /* PFGeoPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1793F79382913EFFEF7F5823 /* Bond+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFA8DB6570DC3A65FC83EC /* Bond+UINavigationItem.swift */; };
+		184BC75AEBC3783A2B19FA7D /* Pods-DailyPicChallenge-Bolts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0398975B871078E24F45B84E /* Pods-DailyPicChallenge-Bolts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB09798600CECC854427ECB /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = 1781D3E288EA8AAC7A6DF2DA /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A8492DA3BB2BD2BDD631DF /* Bond+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7409501F825AD0D61AB7C3 /* Bond+CALayer.swift */; };
+		24671C017D508AA9ADCFFC31 /* Pods-DailyPicChallenge-Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E39C61B2871F92603CAA7 /* Pods-DailyPicChallenge-Bond-dummy.m */; };
+		24B09637A4B0190981981B71 /* Bond+Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93DACDF587D74D5251530B4 /* Bond+Arrays.swift */; };
+		299377C107600702F9212B6B /* PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D09191141DE9068348C901BC /* PFUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AAA3F8165C31FF86BF1C59F /* PFPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = C22C5810B76709577EC9C571 /* PFPurchase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C95431B929ACC054C162ED8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C123EE0F1DFD920F7CB45D /* Security.framework */; };
+		2F1A6B640DFE224BFE102BE6 /* PFSubclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EBD6BF46CE0A8CE154BB1A0 /* PFSubclassing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FFC370611C68CF2C330CACF /* BoltsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9578ACA37821064F1EB4A6F6 /* BoltsVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3165CA08E068A6983A3BFA5C /* Bond+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB939045211C08C78B590FB2 /* Bond+Operators.swift */; };
+		31987E928F46EA4B1B0CBE8F /* PFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EFA4C454554C75F1263D59 /* PFQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320FBF0B7B8D346F6212039F /* PFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 224ACBEA2FBFE79E106BB88D /* PFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3356AEC11CBF983F828AB07D /* Bond+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D88758BEFC33292A564BAA /* Bond+UITextField.swift */; };
+		3B83CC75D9B3431973374023 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = A486172E0F0768EE00ED75AA /* Empty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3E8965730BC0447A3740DEA5 /* PFObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9419380FCCAEFBCC136D6C9F /* PFObject+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427858B3F74D29BB502C548B /* PFInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3777F4BB81D8AC7D7ADF4453 /* PFInstallation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		433CD0590C83E6623E36427A /* PFACL.h in Headers */ = {isa = PBXBuildFile; fileRef = B2061EDE453925C57669C0CF /* PFACL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43DB8E0DF587256036F55378 /* PFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 61803D74F2AA9C42714D6ABF /* PFSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44FE4794CE051851759857EC /* PFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5687CE2E3E42DB065903995F /* PFFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4764F76DC88BE76A65A72502 /* PF_Twitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AE2526F4827C6A0CAFB6D3 /* PF_Twitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CE188D5CF498A9AE159415D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B84C763C0E66C5C3DB621 /* Foundation.framework */; };
+		53D2FF35E11C52260EEF435D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B84C763C0E66C5C3DB621 /* Foundation.framework */; };
+		5CA41AA22A121185492FBE0D /* PFNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CF534B9797F5B3B85AC88D /* PFNullability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F9C7944E21C2E1DA96B4BAF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6AD6DADE08D922B5FCD6AE /* Bolts.framework */; };
+		61258A999B356DA844BA8382 /* Pods-DailyPicChallenge-Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5DDB9497F1165E29D683E0F /* Pods-DailyPicChallenge-Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6515733DC9FAE8A710155C0A /* Pods-DailyPicChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18E43B420971D5C382FCACC /* Pods-DailyPicChallenge-dummy.m */; };
+		660250B295A7D6EE709BBF5A /* PFCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED457144AF636B46F3E027 /* PFCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6707787DD0582736BC6641BF /* PFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE78C45EF7967D59B99FFEE /* PFConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CCFF89F6EC005E8220A4F3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567F980A8C9BA142788BD500 /* CoreGraphics.framework */; };
+		719FB6790F8A77A045A743DF /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = EA504F80864B48DB2BB29C64 /* Bolts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		768FBC07A8E2DE3A89389ED8 /* Pods-DailyPicChallenge-Parse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C89B8DA97FB7D60BC61FA /* Pods-DailyPicChallenge-Parse-dummy.m */; };
+		7B8951515AA28A5AEB181A68 /* PFConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C41311D31DF1368C0FDFD5CC /* PFConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		837905493D30D83CF260EF2B /* Pods-DailyPicChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16126912F9C19498B5D56CF9 /* Pods-DailyPicChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85300A64BBF6055AFBAF3353 /* BFTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 932C079522A143DBF6C4D2CE /* BFTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854CC8A888E0D3853CDF2C29 /* Bond+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FFAD2700336FBFC910440F /* Bond+UITextView.swift */; };
+		85829DB6632D34F8182447E4 /* PFRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 18855E81B1D30D29185A0A8B /* PFRelation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8681D2059072FEAF1CFE5B4B /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C5D06F47D0C7DFCA8BBE2 /* BFTaskCompletionSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		86B60C531B9D3E0417D440A5 /* PFAnonymousUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8062EFF66908B14778461ACD /* PFAnonymousUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A791DA94F006B835B810F75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B84C763C0E66C5C3DB621 /* Foundation.framework */; };
+		8B028DFA3D75EB18AD687497 /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED6E541D45A39D3AE3491 /* BFTask.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8BA90E54B487E281D5DA6689 /* Bond+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AAB632442A4167CD9FF21 /* Bond+UIButton.swift */; };
+		8DFD47AC91D319E98FBFD5AD /* PFRole.h in Headers */ = {isa = PBXBuildFile; fileRef = D3DC611E4E7D7B357086D4A5 /* PFRole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		902FBB1D61174668A8BD0525 /* Bond+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2D62850A8586F7E7C8C8E /* Bond+UISwitch.swift */; };
+		973E3FCF2AA357975CBC2178 /* Bond+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AAB9461555C05D9425423C /* Bond+UICollectionView.swift */; };
+		9D6D6571F90D8396AB8C96CF /* BFCancellationTokenRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DCC1BFA231E6BA70132AB3 /* BFCancellationTokenRegistration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E205CCA8D6BBBE7D62D93BB /* Bond+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2143F4A22BC0D35723D8AE /* Bond+UIView.swift */; };
+		9EEF7C010BC6F3EC84E74846 /* Pods-DailyPicChallenge-Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D2B65FDF75509E32F85C87 /* Pods-DailyPicChallenge-Bolts-dummy.m */; };
+		A29ED07AFA5ADE33A4B4A17E /* PFAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 2849F6C48A3AF33750774F14 /* PFAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4287AB1D8ECB5A974B95E9A /* PFTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 232F70917C961DBE32787A61 /* PFTwitterUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A91D57BB441D204CFE6B4090 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF22E96692C0046871EBCA8 /* StoreKit.framework */; };
+		AA2073C01B206B6B1959FA6B /* Bond+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117D25B4F61A87F8FDAC84D /* Bond+UIActivityIndicatorView.swift */; };
+		AC7CCD9057EF92EAEB98A4E8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835A66B84BDBE4E00FF5F48D /* CFNetwork.framework */; };
+		AEE6AF5FC3D9DDB891EFC276 /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2E335174A886343544BF74 /* Parse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE95461C5CC9EB6C145CDA2 /* Bond+UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E815B2BF7739D56356F98 /* Bond+UIBarItem.swift */; };
+		AFF8CC8538183BA4D1F6CEE2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421A7E93373ED2254201329C /* AudioToolbox.framework */; };
+		B1CA66482742285A7EB73045 /* BFCancellationToken.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EA941C14CDD7EEB901EB9A /* BFCancellationToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B49336C5E43707C03643C6A2 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE259FF8532E0AD20F6F71A /* BFExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9F295A67CB4D7A3A07EDC5B /* PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6831D58CF14258C4DEA44A84 /* PFObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB0EC1E497F2035532D7B982 /* BFCancellationTokenSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E5C1C44219C5D25816B7A2 /* BFCancellationTokenSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C58B978CC8214110786E1DE3 /* Bond+UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F791BA0D37ABDF4CB49631E /* Bond+UIProgressView.swift */; };
+		C99C8B6C52DD1B6C32BF3C2B /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = D23BB4DAF1F62B4CA0F0D53A /* BFExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD02A4A6260E4C7E9B635C0E /* Bond+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE26D9208DB755584AF96116 /* Bond+UIImageView.swift */; };
+		D53B9C8E270BC96A07A289C8 /* Bolts.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D1830B51AAE63227B96BD2 /* Bolts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D773C3CCD885FDCAB8D879CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1E12B7FEC18760F76B90AD /* SystemConfiguration.framework */; };
+		DC2F42641B8FCD06EB21ED7A /* BFCancellationTokenRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = E011EBF1C994CAD4CD36D492 /* BFCancellationTokenRegistration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DDA3C72E7BA977AF79693535 /* PFPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC206891F885083BDA122EA /* PFPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA5E4A520C49376741579EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1E12B7FEC18760F76B90AD /* SystemConfiguration.framework */; };
+		E0EDEA7181BDB36D65D06B32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02C06281118DE97BA1A1535 /* CoreLocation.framework */; };
+		E650B8FD10DF5B73095E71F3 /* Bond+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AC406920BFF9F5EAD83F1 /* Bond+NSLayoutConstraint.swift */; };
+		E8A093E83417F4D12C99F967 /* Bond+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF2BF05B495FF3559C57C7 /* Bond+UILabel.swift */; };
+		E904E362A29C62A9F7A4344D /* BFCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C8CD387A8FC88D382BFC0 /* BFCancellationToken.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E943F42D1206F2616A8E76D3 /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CD4586FA36F117CB6BAABF /* Bond.swift */; };
+		ED7D040FEAE415DFDF25DA4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD87F7EF57FB842829264C27 /* QuartzCore.framework */; };
+		EE1B8019D52C2794F15F1C66 /* Bond+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05B663DCCD221138575139 /* Bond+UITableView.swift */; };
+		F1C2786D27D15F162046885C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B84C763C0E66C5C3DB621 /* Foundation.framework */; };
+		FBA87AC686072E05602769BF /* PFProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = EBEA3C3796FF235DF37FDC60 /* PFProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD7844B54C4FB5BCFA568E01 /* Bond+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A7957FAD4995209E8566A8 /* Bond+UIDatePicker.swift */; };
+		FE23B0C356D08934F0F346D7 /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F920FB379FF749AF3B3A893D /* BFTaskCompletionSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		20A6DFE52181036CA5683057 /* PBXContainerItemProxy */ = {
+		11A8A9A07F17A777D488865A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3F5EAE84505535BD92768497 /* Project object */;
+			containerPortal = 013C29F19838FE545D044BA9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63E15514EF8BFD3C21AA7A06;
+			remoteGlobalIDString = 6A07DDADBA1416F1031B3BB8;
 			remoteInfo = "Pods-DailyPicChallenge-Bond";
+		};
+		38F8145BB762B3619151BB28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013C29F19838FE545D044BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D162E86AC101A07A2DFCE3E6;
+			remoteInfo = "Pods-DailyPicChallenge-Bolts";
+		};
+		56DC415CE6F8A9CD0007F3BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013C29F19838FE545D044BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D162E86AC101A07A2DFCE3E6;
+			remoteInfo = "Pods-DailyPicChallenge-Bolts";
+		};
+		EF815088FE638F5138286042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013C29F19838FE545D044BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2797052FEA68632794EF44B4;
+			remoteInfo = "Pods-DailyPicChallenge-Parse";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03D5F95B566554AE070ACCAB /* Pods-DailyPicChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-umbrella.h"; sourceTree = "<group>"; };
-		0B895803A38AE112B6CCCC9B /* Bond+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Operators.swift"; path = "Bond/Bond+Operators.swift"; sourceTree = "<group>"; };
-		200EB8DFEBCB2ADCEFF11F55 /* Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bond.swift; path = Bond/Bond.swift; sourceTree = "<group>"; };
-		2776169151BA9994623CC09C /* Bond+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIActivityIndicatorView.swift"; path = "Bond/iOS/Bond+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
-		2E8EFAD9A26A49CADBD735E4 /* Pods-DailyPicChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyPicChallenge-resources.sh"; sourceTree = "<group>"; };
-		33692627A32B71853625B168 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A8893AB0683DFC844C61EA5 /* Bond+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIView.swift"; path = "Bond/iOS/Bond+UIView.swift"; sourceTree = "<group>"; };
-		4B2E26ED4D69E2C20779F8C1 /* Pods-DailyPicChallenge-Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyPicChallenge-Bond.modulemap"; sourceTree = "<group>"; };
-		4DF62AA2F3A62C044B9B0599 /* Pods-DailyPicChallenge-Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyPicChallenge-Bond-dummy.m"; sourceTree = "<group>"; };
-		4FB362FF9EB565F4FFE13845 /* Pods-DailyPicChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		539535B8633172C8D0DFEA2C /* Bond+Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Functional.swift"; path = "Bond/Bond+Functional.swift"; sourceTree = "<group>"; };
-		5476DE3FD888E3E348AEBC38 /* Bond+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextView.swift"; path = "Bond/iOS/Bond+UITextView.swift"; sourceTree = "<group>"; };
-		5C7DEF19AC6C718442268270 /* Bond+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Foundation.swift"; path = "Bond/Bond+Foundation.swift"; sourceTree = "<group>"; };
-		66B14F95FDF0342576A8C885 /* Pods-DailyPicChallenge-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-environment.h"; sourceTree = "<group>"; };
-		699688A050C9659D67B42767 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		75960D6A03B4A5473C63E1DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		7C45DEED91EB83CA1040ED8B /* Bond+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIImageView.swift"; path = "Bond/iOS/Bond+UIImageView.swift"; sourceTree = "<group>"; };
-		7EF571A66CF812BD21F0B669 /* Pods-DailyPicChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyPicChallenge-dummy.m"; sourceTree = "<group>"; };
-		8354118FAF2C4B3BB85CE838 /* Pods-DailyPicChallenge-Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Bond-prefix.pch"; sourceTree = "<group>"; };
-		83B88EED1D0A790EA17881F7 /* Pods-DailyPicChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyPicChallenge-frameworks.sh"; sourceTree = "<group>"; };
-		8AB05A18F70494C1E554AE2F /* Bond+UINavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UINavigationItem.swift"; path = "Bond/iOS/Bond+UINavigationItem.swift"; sourceTree = "<group>"; };
-		8D4DE42ACF80107F4FFB57C0 /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D9ADED333F37A16878EAC4 /* Bond+UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISwitch.swift"; path = "Bond/iOS/Bond+UISwitch.swift"; sourceTree = "<group>"; };
-		9767F8C85F48C440CB78AEC5 /* Bond+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+NSLayoutConstraint.swift"; path = "Bond/Shared/Bond+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
-		A3E49528F60DFB741E06D6C6 /* Bond+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+CALayer.swift"; path = "Bond/Shared/Bond+CALayer.swift"; sourceTree = "<group>"; };
-		A8BA17CFD6B780FBFF314D91 /* Bond+UIBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIBarItem.swift"; path = "Bond/iOS/Bond+UIBarItem.swift"; sourceTree = "<group>"; };
-		AB36151DEBD1E970672F0B8E /* Pods-DailyPicChallenge-Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Bond-umbrella.h"; sourceTree = "<group>"; };
-		AE851D9E3F1727317A8AABAB /* Bond+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextField.swift"; path = "Bond/iOS/Bond+UITextField.swift"; sourceTree = "<group>"; };
-		AEB9CD8A55E4F6EFCB56EC18 /* Bond+UISlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISlider.swift"; path = "Bond/iOS/Bond+UISlider.swift"; sourceTree = "<group>"; };
-		B1872633F5283D90484918F2 /* Bond+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UILabel.swift"; path = "Bond/iOS/Bond+UILabel.swift"; sourceTree = "<group>"; };
-		B4731910FF74285B1B5429A1 /* Bond+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITableView.swift"; path = "Bond/iOS/Bond+UITableView.swift"; sourceTree = "<group>"; };
-		B6B1B16B90F2DB6A21F2C3A3 /* Bond+Arrays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Arrays.swift"; path = "Bond/Bond+Arrays.swift"; sourceTree = "<group>"; };
-		B745EC9CF04D030B55AD2DD0 /* Pods-DailyPicChallenge-Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Bond.xcconfig"; sourceTree = "<group>"; };
-		D23E3A66C4EA323BE9F06BC7 /* Pods-DailyPicChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyPicChallenge.modulemap"; sourceTree = "<group>"; };
-		E1E1AC925F7F6BAFCFFB672B /* Pods-DailyPicChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		E7DFE39B36DB5B4F34CDCABA /* Bond+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIButton.swift"; path = "Bond/iOS/Bond+UIButton.swift"; sourceTree = "<group>"; };
-		E8463B3CB2291BF6825A5A85 /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
-		ED714FC9A5AA17BA433845C7 /* Bond+UIProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIProgressView.swift"; path = "Bond/iOS/Bond+UIProgressView.swift"; sourceTree = "<group>"; };
-		F04FFACCB4A45D635734E577 /* Pods-DailyPicChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyPicChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
-		F55061A07A8828D9FD27595E /* Bond+UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UICollectionView.swift"; path = "Bond/iOS/Bond+UICollectionView.swift"; sourceTree = "<group>"; };
-		F6482270F813A5A97C412544 /* Pods-DailyPicChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyPicChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F79BE1A23A95D474CBC4E32E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FA7B8F8D882C6E910E366079 /* Pods_DailyPicChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPicChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE1200EEB66233433C0AFDF5 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Bond-Private.xcconfig"; sourceTree = "<group>"; };
-		FF31967352FE1FC2C7ABDD40 /* Bond+UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIDatePicker.swift"; path = "Bond/iOS/Bond+UIDatePicker.swift"; sourceTree = "<group>"; };
-		FFD71F5808426FE1F7C3840D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		005F48BF9797951DE20E0662 /* Pods-DailyPicChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyPicChallenge.modulemap"; sourceTree = "<group>"; };
+		0135091331E73D10A3AA5646 /* Pods-DailyPicChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyPicChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		0398975B871078E24F45B84E /* Pods-DailyPicChallenge-Bolts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Bolts-umbrella.h"; sourceTree = "<group>"; };
+		089AC406920BFF9F5EAD83F1 /* Bond+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+NSLayoutConstraint.swift"; path = "Bond/Shared/Bond+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		08AE2526F4827C6A0CAFB6D3 /* PF_Twitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PF_Twitter.h; sourceTree = "<group>"; };
+		0A6AAB632442A4167CD9FF21 /* Bond+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIButton.swift"; path = "Bond/iOS/Bond+UIButton.swift"; sourceTree = "<group>"; };
+		0D24FCC0829F025D19C2396B /* Bond+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Foundation.swift"; path = "Bond/Bond+Foundation.swift"; sourceTree = "<group>"; };
+		0EC206891F885083BDA122EA /* PFPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFPush.h; sourceTree = "<group>"; };
+		13A7957FAD4995209E8566A8 /* Bond+UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIDatePicker.swift"; path = "Bond/iOS/Bond+UIDatePicker.swift"; sourceTree = "<group>"; };
+		16126912F9C19498B5D56CF9 /* Pods-DailyPicChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-umbrella.h"; sourceTree = "<group>"; };
+		1781D3E288EA8AAC7A6DF2DA /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
+		18855E81B1D30D29185A0A8B /* PFRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFRelation.h; sourceTree = "<group>"; };
+		1ABED6E541D45A39D3AE3491 /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
+		1D05B663DCCD221138575139 /* Bond+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITableView.swift"; path = "Bond/iOS/Bond+UITableView.swift"; sourceTree = "<group>"; };
+		1F6C8CD387A8FC88D382BFC0 /* BFCancellationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationToken.m; path = Bolts/Common/BFCancellationToken.m; sourceTree = "<group>"; };
+		1F791BA0D37ABDF4CB49631E /* Bond+UIProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIProgressView.swift"; path = "Bond/iOS/Bond+UIProgressView.swift"; sourceTree = "<group>"; };
+		1FBCEE1CB0937D1E3E3D79CC /* Bond+UISlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISlider.swift"; path = "Bond/iOS/Bond+UISlider.swift"; sourceTree = "<group>"; };
+		217759AFF8BFFA5D89F93A55 /* Pods-DailyPicChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyPicChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		224ACBEA2FBFE79E106BB88D /* PFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		22F96B1061036881DDFB77A7 /* Pods-DailyPicChallenge-Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Bolts-prefix.pch"; sourceTree = "<group>"; };
+		232F70917C961DBE32787A61 /* PFTwitterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFTwitterUtils.h; sourceTree = "<group>"; };
+		26C123EE0F1DFD920F7CB45D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2849F6C48A3AF33750774F14 /* PFAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFAnalytics.h; sourceTree = "<group>"; };
+		286D50B2444E6D95A7F77E71 /* Pods-DailyPicChallenge-Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Bond.xcconfig"; sourceTree = "<group>"; };
+		2B9976E2669EA1D763BF52F3 /* Pods-DailyPicChallenge-Parse-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Parse-Private.xcconfig"; sourceTree = "<group>"; };
+		2D2E335174A886343544BF74 /* Parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Parse.h; sourceTree = "<group>"; };
+		32ED457144AF636B46F3E027 /* PFCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFCloud.h; sourceTree = "<group>"; };
+		33EFA4C454554C75F1263D59 /* PFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFQuery.h; sourceTree = "<group>"; };
+		3777F4BB81D8AC7D7ADF4453 /* PFInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFInstallation.h; sourceTree = "<group>"; };
+		3DA57B1DC900B41444EB1549 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421A7E93373ED2254201329C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		461E8834450CCC835FC823F9 /* Pods-DailyPicChallenge-Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyPicChallenge-Bond.modulemap"; sourceTree = "<group>"; };
+		4E5D20BA1FEA0D43B108306E /* Pods-DailyPicChallenge-Parse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Parse-prefix.pch"; sourceTree = "<group>"; };
+		511C89B8DA97FB7D60BC61FA /* Pods-DailyPicChallenge-Parse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyPicChallenge-Parse-dummy.m"; sourceTree = "<group>"; };
+		52475F3A955630FA8A8600EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		567F980A8C9BA142788BD500 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5687CE2E3E42DB065903995F /* PFFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFFile.h; sourceTree = "<group>"; };
+		593E5DE148AB082447476494 /* Pods-DailyPicChallenge-Bolts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Bolts-Private.xcconfig"; sourceTree = "<group>"; };
+		5C8E39C61B2871F92603CAA7 /* Pods-DailyPicChallenge-Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyPicChallenge-Bond-dummy.m"; sourceTree = "<group>"; };
+		5EBD6BF46CE0A8CE154BB1A0 /* PFSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFSubclassing.h; sourceTree = "<group>"; };
+		613E815B2BF7739D56356F98 /* Bond+UIBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIBarItem.swift"; path = "Bond/iOS/Bond+UIBarItem.swift"; sourceTree = "<group>"; };
+		6165D1CF1CA64659517BEC3D /* libParseLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libParseLib.a; sourceTree = "<group>"; };
+		61803D74F2AA9C42714D6ABF /* PFSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFSession.h; sourceTree = "<group>"; };
+		62D1830B51AAE63227B96BD2 /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
+		6831D58CF14258C4DEA44A84 /* PFObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFObject.h; sourceTree = "<group>"; };
+		6E7956762F30C3AE738F942B /* Pods-DailyPicChallenge-Parse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Parse.xcconfig"; sourceTree = "<group>"; };
+		7117D25B4F61A87F8FDAC84D /* Bond+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIActivityIndicatorView.swift"; path = "Bond/iOS/Bond+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
+		72CF534B9797F5B3B85AC88D /* PFNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFNullability.h; sourceTree = "<group>"; };
+		76F3FE8F717B89D7E724B6AF /* Pods-DailyPicChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyPicChallenge-resources.sh"; sourceTree = "<group>"; };
+		775E2D54E7C866C8BA273A38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78DFA8DB6570DC3A65FC83EC /* Bond+UINavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UINavigationItem.swift"; path = "Bond/iOS/Bond+UINavigationItem.swift"; sourceTree = "<group>"; };
+		79AAB9461555C05D9425423C /* Bond+UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UICollectionView.swift"; path = "Bond/iOS/Bond+UICollectionView.swift"; sourceTree = "<group>"; };
+		7A6AD6DADE08D922B5FCD6AE /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB1B39847C4288021EA63FC /* Pods-DailyPicChallenge-Parse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyPicChallenge-Parse.modulemap"; sourceTree = "<group>"; };
+		7E2B1285A3DBFE6108E19C5C /* BFCancellationTokenSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenSource.m; path = Bolts/Common/BFCancellationTokenSource.m; sourceTree = "<group>"; };
+		8062EFF66908B14778461ACD /* PFAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFAnonymousUtils.h; sourceTree = "<group>"; };
+		81CD4586FA36F117CB6BAABF /* Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bond.swift; path = Bond/Bond.swift; sourceTree = "<group>"; };
+		835A66B84BDBE4E00FF5F48D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8B2143F4A22BC0D35723D8AE /* Bond+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIView.swift"; path = "Bond/iOS/Bond+UIView.swift"; sourceTree = "<group>"; };
+		932C079522A143DBF6C4D2CE /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
+		9419380FCCAEFBCC136D6C9F /* PFObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PFObject+Subclass.h"; sourceTree = "<group>"; };
+		9578ACA37821064F1EB4A6F6 /* BoltsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoltsVersion.h; path = Bolts/Common/BoltsVersion.h; sourceTree = "<group>"; };
+		966B84C763C0E66C5C3DB621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		98DF2BF05B495FF3559C57C7 /* Bond+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UILabel.swift"; path = "Bond/iOS/Bond+UILabel.swift"; sourceTree = "<group>"; };
+		9E7409501F825AD0D61AB7C3 /* Bond+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+CALayer.swift"; path = "Bond/Shared/Bond+CALayer.swift"; sourceTree = "<group>"; };
+		A486172E0F0768EE00ED75AA /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		A6EA941C14CDD7EEB901EB9A /* BFCancellationToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationToken.h; path = Bolts/Common/BFCancellationToken.h; sourceTree = "<group>"; };
+		A8E5C1C44219C5D25816B7A2 /* BFCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenSource.h; path = Bolts/Common/BFCancellationTokenSource.h; sourceTree = "<group>"; };
+		AB939045211C08C78B590FB2 /* Bond+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Operators.swift"; path = "Bond/Bond+Operators.swift"; sourceTree = "<group>"; };
+		AD87F7EF57FB842829264C27 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		AF6BF4AB16613E46CC81338C /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FFAD2700336FBFC910440F /* Bond+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextView.swift"; path = "Bond/iOS/Bond+UITextView.swift"; sourceTree = "<group>"; };
+		B110FA743DAEC9F80A4E808D /* PFGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFGeoPoint.h; sourceTree = "<group>"; };
+		B18E43B420971D5C382FCACC /* Pods-DailyPicChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyPicChallenge-dummy.m"; sourceTree = "<group>"; };
+		B2061EDE453925C57669C0CF /* PFACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFACL.h; sourceTree = "<group>"; };
+		B4DCC1BFA231E6BA70132AB3 /* BFCancellationTokenRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenRegistration.h; path = Bolts/Common/BFCancellationTokenRegistration.h; sourceTree = "<group>"; };
+		B8CC243C5A26B51C4B8DF700 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93DACDF587D74D5251530B4 /* Bond+Arrays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Arrays.swift"; path = "Bond/Bond+Arrays.swift"; sourceTree = "<group>"; };
+		BAD2D62850A8586F7E7C8C8E /* Bond+UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISwitch.swift"; path = "Bond/iOS/Bond+UISwitch.swift"; sourceTree = "<group>"; };
+		BB30811DE70E072DA1334459 /* Pods-DailyPicChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyPicChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB8600C77D6EF47B26BF0E49 /* Bond+Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Functional.swift"; path = "Bond/Bond+Functional.swift"; sourceTree = "<group>"; };
+		BCE259FF8532E0AD20F6F71A /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
+		BD01D162A540F2CA9725326C /* Pods-DailyPicChallenge-Bolts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyPicChallenge-Bolts.modulemap"; sourceTree = "<group>"; };
+		BEE78C45EF7967D59B99FFEE /* PFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFConstants.h; sourceTree = "<group>"; };
+		BEF8B5F881826592B329602F /* Pods-DailyPicChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C1AD3FBB1D56AD03F016BA77 /* Pods_DailyPicChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPicChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22C5810B76709577EC9C571 /* PFPurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFPurchase.h; sourceTree = "<group>"; };
+		C41311D31DF1368C0FDFD5CC /* PFConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFConfig.h; sourceTree = "<group>"; };
+		C5DDB9497F1165E29D683E0F /* Pods-DailyPicChallenge-Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Bond-umbrella.h"; sourceTree = "<group>"; };
+		C759F93F7AC391B6BFA8600F /* Pods-DailyPicChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD18F48BF0A9545C12D40F6 /* Pods-DailyPicChallenge-Bolts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Bolts.xcconfig"; sourceTree = "<group>"; };
+		CEF22E96692C0046871EBCA8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		D09191141DE9068348C901BC /* PFUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFUser.h; sourceTree = "<group>"; };
+		D23BB4DAF1F62B4CA0F0D53A /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
+		D3D2B65FDF75509E32F85C87 /* Pods-DailyPicChallenge-Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyPicChallenge-Bolts-dummy.m"; sourceTree = "<group>"; };
+		D3DC611E4E7D7B357086D4A5 /* PFRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFRole.h; sourceTree = "<group>"; };
+		D3F08C78497D362FE5675748 /* Pods-DailyPicChallenge-Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Bond-prefix.pch"; sourceTree = "<group>"; };
+		D93485A7B60E64572F25A247 /* Pods-DailyPicChallenge-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-environment.h"; sourceTree = "<group>"; };
+		DD1E12B7FEC18760F76B90AD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		E011EBF1C994CAD4CD36D492 /* BFCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenRegistration.m; path = Bolts/Common/BFCancellationTokenRegistration.m; sourceTree = "<group>"; };
+		E02C06281118DE97BA1A1535 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		E51B505CC9212D1325AF28BD /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E644AC5C927F85D4E5BAAC20 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyPicChallenge-Bond-Private.xcconfig"; sourceTree = "<group>"; };
+		EA504F80864B48DB2BB29C64 /* Bolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bolts.m; path = Bolts/Common/Bolts.m; sourceTree = "<group>"; };
+		EBEA3C3796FF235DF37FDC60 /* PFProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFProduct.h; sourceTree = "<group>"; };
+		EE26D9208DB755584AF96116 /* Bond+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIImageView.swift"; path = "Bond/iOS/Bond+UIImageView.swift"; sourceTree = "<group>"; };
+		F0D88758BEFC33292A564BAA /* Bond+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextField.swift"; path = "Bond/iOS/Bond+UITextField.swift"; sourceTree = "<group>"; };
+		F46DA38EFD127862ED7D1007 /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62C5D06F47D0C7DFCA8BBE2 /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		F920FB379FF749AF3B3A893D /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		FAE60A7D3ED17B0343E8D10E /* Pods-DailyPicChallenge-Parse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyPicChallenge-Parse-umbrella.h"; sourceTree = "<group>"; };
+		FFCA3A10548A7A234E2E2662 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41B281FE2B36DE542F831566 /* Frameworks */ = {
+		02FFF04DC3D56396537A539B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67ABE12DAE70156FEC9D92B3 /* Foundation.framework in Frameworks */,
-				0AE42E1EF0D8260C3B87B5C7 /* SystemConfiguration.framework in Frameworks */,
+				53D2FF35E11C52260EEF435D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		953D476A6EFDFBF1DB3420A0 /* Frameworks */ = {
+		54A053B883EAAF6BED498717 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0596C67B8977AA567B97B4BA /* Foundation.framework in Frameworks */,
+				F1C2786D27D15F162046885C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DC0CDDF74074E3D4A97713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE188D5CF498A9AE159415D /* Foundation.framework in Frameworks */,
+				DEA5E4A520C49376741579EA /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99045DEEEBD4F3D7639C8240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF8CC8538183BA4D1F6CEE2 /* AudioToolbox.framework in Frameworks */,
+				5F9C7944E21C2E1DA96B4BAF /* Bolts.framework in Frameworks */,
+				AC7CCD9057EF92EAEB98A4E8 /* CFNetwork.framework in Frameworks */,
+				6CCFF89F6EC005E8220A4F3C /* CoreGraphics.framework in Frameworks */,
+				E0EDEA7181BDB36D65D06B32 /* CoreLocation.framework in Frameworks */,
+				8A791DA94F006B835B810F75 /* Foundation.framework in Frameworks */,
+				ED7D040FEAE415DFDF25DA4F /* QuartzCore.framework in Frameworks */,
+				2C95431B929ACC054C162ED8 /* Security.framework in Frameworks */,
+				A91D57BB441D204CFE6B4090 /* StoreKit.framework in Frameworks */,
+				D773C3CCD885FDCAB8D879CE /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B49F2BA6B59DA2D3FF9322B /* Support Files */ = {
+		0D82D3853B2321EC23902775 /* Bond */ = {
 			isa = PBXGroup;
 			children = (
-				FFD71F5808426FE1F7C3840D /* Info.plist */,
-				4B2E26ED4D69E2C20779F8C1 /* Pods-DailyPicChallenge-Bond.modulemap */,
-				B745EC9CF04D030B55AD2DD0 /* Pods-DailyPicChallenge-Bond.xcconfig */,
-				FE1200EEB66233433C0AFDF5 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */,
-				4DF62AA2F3A62C044B9B0599 /* Pods-DailyPicChallenge-Bond-dummy.m */,
-				8354118FAF2C4B3BB85CE838 /* Pods-DailyPicChallenge-Bond-prefix.pch */,
-				AB36151DEBD1E970672F0B8E /* Pods-DailyPicChallenge-Bond-umbrella.h */,
+				1781D3E288EA8AAC7A6DF2DA /* Bond.h */,
+				81CD4586FA36F117CB6BAABF /* Bond.swift */,
+				B93DACDF587D74D5251530B4 /* Bond+Arrays.swift */,
+				9E7409501F825AD0D61AB7C3 /* Bond+CALayer.swift */,
+				0D24FCC0829F025D19C2396B /* Bond+Foundation.swift */,
+				BB8600C77D6EF47B26BF0E49 /* Bond+Functional.swift */,
+				089AC406920BFF9F5EAD83F1 /* Bond+NSLayoutConstraint.swift */,
+				AB939045211C08C78B590FB2 /* Bond+Operators.swift */,
+				7117D25B4F61A87F8FDAC84D /* Bond+UIActivityIndicatorView.swift */,
+				613E815B2BF7739D56356F98 /* Bond+UIBarItem.swift */,
+				0A6AAB632442A4167CD9FF21 /* Bond+UIButton.swift */,
+				79AAB9461555C05D9425423C /* Bond+UICollectionView.swift */,
+				13A7957FAD4995209E8566A8 /* Bond+UIDatePicker.swift */,
+				EE26D9208DB755584AF96116 /* Bond+UIImageView.swift */,
+				98DF2BF05B495FF3559C57C7 /* Bond+UILabel.swift */,
+				78DFA8DB6570DC3A65FC83EC /* Bond+UINavigationItem.swift */,
+				1F791BA0D37ABDF4CB49631E /* Bond+UIProgressView.swift */,
+				1FBCEE1CB0937D1E3E3D79CC /* Bond+UISlider.swift */,
+				BAD2D62850A8586F7E7C8C8E /* Bond+UISwitch.swift */,
+				1D05B663DCCD221138575139 /* Bond+UITableView.swift */,
+				F0D88758BEFC33292A564BAA /* Bond+UITextField.swift */,
+				B0FFAD2700336FBFC910440F /* Bond+UITextView.swift */,
+				8B2143F4A22BC0D35723D8AE /* Bond+UIView.swift */,
+				B29DF6EF4C18F2A80232C5FC /* Support Files */,
+			);
+			path = Bond;
+			sourceTree = "<group>";
+		};
+		16F0CA112129A1CE10B92DDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8CC243C5A26B51C4B8DF700 /* Info.plist */,
+				7AB1B39847C4288021EA63FC /* Pods-DailyPicChallenge-Parse.modulemap */,
+				6E7956762F30C3AE738F942B /* Pods-DailyPicChallenge-Parse.xcconfig */,
+				2B9976E2669EA1D763BF52F3 /* Pods-DailyPicChallenge-Parse-Private.xcconfig */,
+				511C89B8DA97FB7D60BC61FA /* Pods-DailyPicChallenge-Parse-dummy.m */,
+				4E5D20BA1FEA0D43B108306E /* Pods-DailyPicChallenge-Parse-prefix.pch */,
+				FAE60A7D3ED17B0343E8D10E /* Pods-DailyPicChallenge-Parse-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-DailyPicChallenge-Bond";
+			path = "../Target Support Files/Pods-DailyPicChallenge-Parse";
 			sourceTree = "<group>";
 		};
-		34ECC3B4E2520430F516BA0B /* Pods */ = {
+		1DDFEB5CE73C2FE0F03E20FC /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				E5C3CDC62CE521F23AAD1797 /* Bond */,
+				A6EA941C14CDD7EEB901EB9A /* BFCancellationToken.h */,
+				1F6C8CD387A8FC88D382BFC0 /* BFCancellationToken.m */,
+				B4DCC1BFA231E6BA70132AB3 /* BFCancellationTokenRegistration.h */,
+				E011EBF1C994CAD4CD36D492 /* BFCancellationTokenRegistration.m */,
+				A8E5C1C44219C5D25816B7A2 /* BFCancellationTokenSource.h */,
+				7E2B1285A3DBFE6108E19C5C /* BFCancellationTokenSource.m */,
+				D23BB4DAF1F62B4CA0F0D53A /* BFExecutor.h */,
+				BCE259FF8532E0AD20F6F71A /* BFExecutor.m */,
+				932C079522A143DBF6C4D2CE /* BFTask.h */,
+				1ABED6E541D45A39D3AE3491 /* BFTask.m */,
+				F920FB379FF749AF3B3A893D /* BFTaskCompletionSource.h */,
+				F62C5D06F47D0C7DFCA8BBE2 /* BFTaskCompletionSource.m */,
+				62D1830B51AAE63227B96BD2 /* Bolts.h */,
+				EA504F80864B48DB2BB29C64 /* Bolts.m */,
+				9578ACA37821064F1EB4A6F6 /* BoltsVersion.h */,
 			);
-			name = Pods;
+			name = Tasks;
 			sourceTree = "<group>";
 		};
-		A081AB30D4CE844D4A057A87 /* Products */ = {
+		264AA89EF3792CB81ECFD322 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8D4DE42ACF80107F4FFB57C0 /* Bond.framework */,
-				FA7B8F8D882C6E910E366079 /* Pods_DailyPicChallenge.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A474D568DB6870067D2180F0 = {
-			isa = PBXGroup;
-			children = (
-				F79BE1A23A95D474CBC4E32E /* Podfile */,
-				FD094A48DFEE576A34BE7659 /* Frameworks */,
-				34ECC3B4E2520430F516BA0B /* Pods */,
-				A081AB30D4CE844D4A057A87 /* Products */,
-				C2A04813E0E6859D8402E88C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		AF23E18F35098BAA780792B9 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				699688A050C9659D67B42767 /* Foundation.framework */,
-				75960D6A03B4A5473C63E1DF /* SystemConfiguration.framework */,
+				421A7E93373ED2254201329C /* AudioToolbox.framework */,
+				835A66B84BDBE4E00FF5F48D /* CFNetwork.framework */,
+				567F980A8C9BA142788BD500 /* CoreGraphics.framework */,
+				E02C06281118DE97BA1A1535 /* CoreLocation.framework */,
+				966B84C763C0E66C5C3DB621 /* Foundation.framework */,
+				AD87F7EF57FB842829264C27 /* QuartzCore.framework */,
+				26C123EE0F1DFD920F7CB45D /* Security.framework */,
+				CEF22E96692C0046871EBCA8 /* StoreKit.framework */,
+				DD1E12B7FEC18760F76B90AD /* SystemConfiguration.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C1F2C8C2BECB7DB77E151119 /* Pods-DailyPicChallenge */ = {
+		57AF919A4337B1AD15C7E016 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33692627A32B71853625B168 /* Info.plist */,
-				D23E3A66C4EA323BE9F06BC7 /* Pods-DailyPicChallenge.modulemap */,
-				F6482270F813A5A97C412544 /* Pods-DailyPicChallenge-acknowledgements.markdown */,
-				F04FFACCB4A45D635734E577 /* Pods-DailyPicChallenge-acknowledgements.plist */,
-				7EF571A66CF812BD21F0B669 /* Pods-DailyPicChallenge-dummy.m */,
-				66B14F95FDF0342576A8C885 /* Pods-DailyPicChallenge-environment.h */,
-				83B88EED1D0A790EA17881F7 /* Pods-DailyPicChallenge-frameworks.sh */,
-				2E8EFAD9A26A49CADBD735E4 /* Pods-DailyPicChallenge-resources.sh */,
-				03D5F95B566554AE070ACCAB /* Pods-DailyPicChallenge-umbrella.h */,
-				E1E1AC925F7F6BAFCFFB672B /* Pods-DailyPicChallenge.debug.xcconfig */,
-				4FB362FF9EB565F4FFE13845 /* Pods-DailyPicChallenge.release.xcconfig */,
+				93A7073CE03D6EBB85836F33 /* Bolts */,
+				0D82D3853B2321EC23902775 /* Bond */,
+				ACFF236C146995C3A4A5B685 /* Parse */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E23EB573ABA5490D13A1AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6165D1CF1CA64659517BEC3D /* libParseLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		672D2E7D839A4C243105BDF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5A6D6A214A2C0F39AC00BE6 /* Pods-DailyPicChallenge */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		93A7073CE03D6EBB85836F33 /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				F5104EEE2133595BA313C360 /* Support Files */,
+				1DDFEB5CE73C2FE0F03E20FC /* Tasks */,
+			);
+			path = Bolts;
+			sourceTree = "<group>";
+		};
+		97363A218B87DFEB8406A4F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6AD6DADE08D922B5FCD6AE /* Bolts.framework */,
+				264AA89EF3792CB81ECFD322 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5A6D6A214A2C0F39AC00BE6 /* Pods-DailyPicChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FFCA3A10548A7A234E2E2662 /* Info.plist */,
+				005F48BF9797951DE20E0662 /* Pods-DailyPicChallenge.modulemap */,
+				BB30811DE70E072DA1334459 /* Pods-DailyPicChallenge-acknowledgements.markdown */,
+				217759AFF8BFFA5D89F93A55 /* Pods-DailyPicChallenge-acknowledgements.plist */,
+				B18E43B420971D5C382FCACC /* Pods-DailyPicChallenge-dummy.m */,
+				D93485A7B60E64572F25A247 /* Pods-DailyPicChallenge-environment.h */,
+				0135091331E73D10A3AA5646 /* Pods-DailyPicChallenge-frameworks.sh */,
+				76F3FE8F717B89D7E724B6AF /* Pods-DailyPicChallenge-resources.sh */,
+				16126912F9C19498B5D56CF9 /* Pods-DailyPicChallenge-umbrella.h */,
+				C759F93F7AC391B6BFA8600F /* Pods-DailyPicChallenge.debug.xcconfig */,
+				BEF8B5F881826592B329602F /* Pods-DailyPicChallenge.release.xcconfig */,
 			);
 			name = "Pods-DailyPicChallenge";
 			path = "Target Support Files/Pods-DailyPicChallenge";
 			sourceTree = "<group>";
 		};
-		C2A04813E0E6859D8402E88C /* Targets Support Files */ = {
+		A77B9C2B4C7A0CAEA6171F93 = {
 			isa = PBXGroup;
 			children = (
-				C1F2C8C2BECB7DB77E151119 /* Pods-DailyPicChallenge */,
+				E51B505CC9212D1325AF28BD /* Podfile */,
+				97363A218B87DFEB8406A4F5 /* Frameworks */,
+				57AF919A4337B1AD15C7E016 /* Pods */,
+				AF2950DE979202B7D0863B8B /* Products */,
+				672D2E7D839A4C243105BDF4 /* Targets Support Files */,
 			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E5C3CDC62CE521F23AAD1797 /* Bond */ = {
+		ACFF236C146995C3A4A5B685 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				E8463B3CB2291BF6825A5A85 /* Bond.h */,
-				200EB8DFEBCB2ADCEFF11F55 /* Bond.swift */,
-				B6B1B16B90F2DB6A21F2C3A3 /* Bond+Arrays.swift */,
-				A3E49528F60DFB741E06D6C6 /* Bond+CALayer.swift */,
-				5C7DEF19AC6C718442268270 /* Bond+Foundation.swift */,
-				539535B8633172C8D0DFEA2C /* Bond+Functional.swift */,
-				9767F8C85F48C440CB78AEC5 /* Bond+NSLayoutConstraint.swift */,
-				0B895803A38AE112B6CCCC9B /* Bond+Operators.swift */,
-				2776169151BA9994623CC09C /* Bond+UIActivityIndicatorView.swift */,
-				A8BA17CFD6B780FBFF314D91 /* Bond+UIBarItem.swift */,
-				E7DFE39B36DB5B4F34CDCABA /* Bond+UIButton.swift */,
-				F55061A07A8828D9FD27595E /* Bond+UICollectionView.swift */,
-				FF31967352FE1FC2C7ABDD40 /* Bond+UIDatePicker.swift */,
-				7C45DEED91EB83CA1040ED8B /* Bond+UIImageView.swift */,
-				B1872633F5283D90484918F2 /* Bond+UILabel.swift */,
-				8AB05A18F70494C1E554AE2F /* Bond+UINavigationItem.swift */,
-				ED714FC9A5AA17BA433845C7 /* Bond+UIProgressView.swift */,
-				AEB9CD8A55E4F6EFCB56EC18 /* Bond+UISlider.swift */,
-				92D9ADED333F37A16878EAC4 /* Bond+UISwitch.swift */,
-				B4731910FF74285B1B5429A1 /* Bond+UITableView.swift */,
-				AE851D9E3F1727317A8AABAB /* Bond+UITextField.swift */,
-				5476DE3FD888E3E348AEBC38 /* Bond+UITextView.swift */,
-				3A8893AB0683DFC844C61EA5 /* Bond+UIView.swift */,
-				2B49F2BA6B59DA2D3FF9322B /* Support Files */,
+				A486172E0F0768EE00ED75AA /* Empty.m */,
+				B2061EDE453925C57669C0CF /* PFACL.h */,
+				2849F6C48A3AF33750774F14 /* PFAnalytics.h */,
+				8062EFF66908B14778461ACD /* PFAnonymousUtils.h */,
+				32ED457144AF636B46F3E027 /* PFCloud.h */,
+				C41311D31DF1368C0FDFD5CC /* PFConfig.h */,
+				BEE78C45EF7967D59B99FFEE /* PFConstants.h */,
+				5687CE2E3E42DB065903995F /* PFFile.h */,
+				B110FA743DAEC9F80A4E808D /* PFGeoPoint.h */,
+				3777F4BB81D8AC7D7ADF4453 /* PFInstallation.h */,
+				224ACBEA2FBFE79E106BB88D /* PFNetworkActivityIndicatorManager.h */,
+				72CF534B9797F5B3B85AC88D /* PFNullability.h */,
+				6831D58CF14258C4DEA44A84 /* PFObject.h */,
+				9419380FCCAEFBCC136D6C9F /* PFObject+Subclass.h */,
+				EBEA3C3796FF235DF37FDC60 /* PFProduct.h */,
+				C22C5810B76709577EC9C571 /* PFPurchase.h */,
+				0EC206891F885083BDA122EA /* PFPush.h */,
+				33EFA4C454554C75F1263D59 /* PFQuery.h */,
+				18855E81B1D30D29185A0A8B /* PFRelation.h */,
+				D3DC611E4E7D7B357086D4A5 /* PFRole.h */,
+				61803D74F2AA9C42714D6ABF /* PFSession.h */,
+				5EBD6BF46CE0A8CE154BB1A0 /* PFSubclassing.h */,
+				232F70917C961DBE32787A61 /* PFTwitterUtils.h */,
+				D09191141DE9068348C901BC /* PFUser.h */,
+				08AE2526F4827C6A0CAFB6D3 /* PF_Twitter.h */,
+				2D2E335174A886343544BF74 /* Parse.h */,
+				5E23EB573ABA5490D13A1AE0 /* Frameworks */,
+				16F0CA112129A1CE10B92DDE /* Support Files */,
 			);
-			path = Bond;
+			path = Parse;
 			sourceTree = "<group>";
 		};
-		FD094A48DFEE576A34BE7659 /* Frameworks */ = {
+		AF2950DE979202B7D0863B8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF23E18F35098BAA780792B9 /* iOS */,
+				3DA57B1DC900B41444EB1549 /* Bolts.framework */,
+				F46DA38EFD127862ED7D1007 /* Bond.framework */,
+				AF6BF4AB16613E46CC81338C /* Parse.framework */,
+				C1AD3FBB1D56AD03F016BA77 /* Pods_DailyPicChallenge.framework */,
 			);
-			name = Frameworks;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B29DF6EF4C18F2A80232C5FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				775E2D54E7C866C8BA273A38 /* Info.plist */,
+				461E8834450CCC835FC823F9 /* Pods-DailyPicChallenge-Bond.modulemap */,
+				286D50B2444E6D95A7F77E71 /* Pods-DailyPicChallenge-Bond.xcconfig */,
+				E644AC5C927F85D4E5BAAC20 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */,
+				5C8E39C61B2871F92603CAA7 /* Pods-DailyPicChallenge-Bond-dummy.m */,
+				D3F08C78497D362FE5675748 /* Pods-DailyPicChallenge-Bond-prefix.pch */,
+				C5DDB9497F1165E29D683E0F /* Pods-DailyPicChallenge-Bond-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-DailyPicChallenge-Bond";
+			sourceTree = "<group>";
+		};
+		F5104EEE2133595BA313C360 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52475F3A955630FA8A8600EB /* Info.plist */,
+				BD01D162A540F2CA9725326C /* Pods-DailyPicChallenge-Bolts.modulemap */,
+				CCD18F48BF0A9545C12D40F6 /* Pods-DailyPicChallenge-Bolts.xcconfig */,
+				593E5DE148AB082447476494 /* Pods-DailyPicChallenge-Bolts-Private.xcconfig */,
+				D3D2B65FDF75509E32F85C87 /* Pods-DailyPicChallenge-Bolts-dummy.m */,
+				22F96B1061036881DDFB77A7 /* Pods-DailyPicChallenge-Bolts-prefix.pch */,
+				0398975B871078E24F45B84E /* Pods-DailyPicChallenge-Bolts-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-DailyPicChallenge-Bolts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E8C391B0AE1851F926FD867 /* Headers */ = {
+		68B3C683D8197FA85FA0355A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5638072733C4AFF2E9C32F /* Pods-DailyPicChallenge-umbrella.h in Headers */,
+				433CD0590C83E6623E36427A /* PFACL.h in Headers */,
+				A29ED07AFA5ADE33A4B4A17E /* PFAnalytics.h in Headers */,
+				86B60C531B9D3E0417D440A5 /* PFAnonymousUtils.h in Headers */,
+				660250B295A7D6EE709BBF5A /* PFCloud.h in Headers */,
+				7B8951515AA28A5AEB181A68 /* PFConfig.h in Headers */,
+				6707787DD0582736BC6641BF /* PFConstants.h in Headers */,
+				44FE4794CE051851759857EC /* PFFile.h in Headers */,
+				16C2DEA7E88E532FFBEEDEA5 /* PFGeoPoint.h in Headers */,
+				427858B3F74D29BB502C548B /* PFInstallation.h in Headers */,
+				320FBF0B7B8D346F6212039F /* PFNetworkActivityIndicatorManager.h in Headers */,
+				5CA41AA22A121185492FBE0D /* PFNullability.h in Headers */,
+				3E8965730BC0447A3740DEA5 /* PFObject+Subclass.h in Headers */,
+				B9F295A67CB4D7A3A07EDC5B /* PFObject.h in Headers */,
+				FBA87AC686072E05602769BF /* PFProduct.h in Headers */,
+				2AAA3F8165C31FF86BF1C59F /* PFPurchase.h in Headers */,
+				DDA3C72E7BA977AF79693535 /* PFPush.h in Headers */,
+				31987E928F46EA4B1B0CBE8F /* PFQuery.h in Headers */,
+				85829DB6632D34F8182447E4 /* PFRelation.h in Headers */,
+				8DFD47AC91D319E98FBFD5AD /* PFRole.h in Headers */,
+				43DB8E0DF587256036F55378 /* PFSession.h in Headers */,
+				2F1A6B640DFE224BFE102BE6 /* PFSubclassing.h in Headers */,
+				A4287AB1D8ECB5A974B95E9A /* PFTwitterUtils.h in Headers */,
+				299377C107600702F9212B6B /* PFUser.h in Headers */,
+				4764F76DC88BE76A65A72502 /* PF_Twitter.h in Headers */,
+				AEE6AF5FC3D9DDB891EFC276 /* Parse.h in Headers */,
+				0DC270701AAEC188E93E016D /* Pods-DailyPicChallenge-Parse-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		805520F5AE467234EB983489 /* Headers */ = {
+		77AB009B213248D49FA7E1A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A20D272926EDA98E962856 /* Bond.h in Headers */,
-				E8483E0012B9B0CC60B4A780 /* Pods-DailyPicChallenge-Bond-umbrella.h in Headers */,
+				B1CA66482742285A7EB73045 /* BFCancellationToken.h in Headers */,
+				9D6D6571F90D8396AB8C96CF /* BFCancellationTokenRegistration.h in Headers */,
+				BB0EC1E497F2035532D7B982 /* BFCancellationTokenSource.h in Headers */,
+				C99C8B6C52DD1B6C32BF3C2B /* BFExecutor.h in Headers */,
+				85300A64BBF6055AFBAF3353 /* BFTask.h in Headers */,
+				FE23B0C356D08934F0F346D7 /* BFTaskCompletionSource.h in Headers */,
+				D53B9C8E270BC96A07A289C8 /* Bolts.h in Headers */,
+				2FFC370611C68CF2C330CACF /* BoltsVersion.h in Headers */,
+				184BC75AEBC3783A2B19FA7D /* Pods-DailyPicChallenge-Bolts-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		823BDDA0E4F9AE84713D2FA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB09798600CECC854427ECB /* Bond.h in Headers */,
+				61258A999B356DA844BA8382 /* Pods-DailyPicChallenge-Bond-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC35D668CD0F663BBB693099 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837905493D30D83CF260EF2B /* Pods-DailyPicChallenge-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		631781839C864E98956C3B57 /* Pods-DailyPicChallenge */ = {
+		2797052FEA68632794EF44B4 /* Pods-DailyPicChallenge-Parse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47045819D7189AC60C408797 /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge" */;
+			buildConfigurationList = F02577C428BF10AAB466E3EC /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Parse" */;
 			buildPhases = (
-				3D2A6B4DCBF617021FE10B41 /* Sources */,
-				953D476A6EFDFBF1DB3420A0 /* Frameworks */,
-				3E8C391B0AE1851F926FD867 /* Headers */,
+				3878C2A1DA0970B002B94199 /* Sources */,
+				99045DEEEBD4F3D7639C8240 /* Frameworks */,
+				68B3C683D8197FA85FA0355A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E71197ECE202EEE6DF82BFB3 /* PBXTargetDependency */,
+				8471AF37E6F67593F8C08BAE /* PBXTargetDependency */,
 			);
-			name = "Pods-DailyPicChallenge";
-			productName = "Pods-DailyPicChallenge";
-			productReference = FA7B8F8D882C6E910E366079 /* Pods_DailyPicChallenge.framework */;
+			name = "Pods-DailyPicChallenge-Parse";
+			productName = "Pods-DailyPicChallenge-Parse";
+			productReference = AF6BF4AB16613E46CC81338C /* Parse.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		63E15514EF8BFD3C21AA7A06 /* Pods-DailyPicChallenge-Bond */ = {
+		6A07DDADBA1416F1031B3BB8 /* Pods-DailyPicChallenge-Bond */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6503F3AFA5E9BAA024B4C040 /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Bond" */;
+			buildConfigurationList = A5CB7910945EFD138C18C80E /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Bond" */;
 			buildPhases = (
-				7F0743C995D078E3D0C99D12 /* Sources */,
-				41B281FE2B36DE542F831566 /* Frameworks */,
-				805520F5AE467234EB983489 /* Headers */,
+				E51D5049DCFAFFD1338288C5 /* Sources */,
+				95DC0CDDF74074E3D4A97713 /* Frameworks */,
+				823BDDA0E4F9AE84713D2FA1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -292,87 +625,195 @@
 			);
 			name = "Pods-DailyPicChallenge-Bond";
 			productName = "Pods-DailyPicChallenge-Bond";
-			productReference = 8D4DE42ACF80107F4FFB57C0 /* Bond.framework */;
+			productReference = F46DA38EFD127862ED7D1007 /* Bond.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D162E86AC101A07A2DFCE3E6 /* Pods-DailyPicChallenge-Bolts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09032A77DD23BFB107535F2 /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Bolts" */;
+			buildPhases = (
+				C749D450538DFE4AF3009F30 /* Sources */,
+				02FFF04DC3D56396537A539B /* Frameworks */,
+				77AB009B213248D49FA7E1A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DailyPicChallenge-Bolts";
+			productName = "Pods-DailyPicChallenge-Bolts";
+			productReference = 3DA57B1DC900B41444EB1549 /* Bolts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6D446B09E9E72545D209E3E /* Pods-DailyPicChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0643E208BDDE9195F74504D /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge" */;
+			buildPhases = (
+				21A3044A31C1C02F79A68B54 /* Sources */,
+				54A053B883EAAF6BED498717 /* Frameworks */,
+				EC35D668CD0F663BBB693099 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0835475C5FE5DD28B3D82533 /* PBXTargetDependency */,
+				13AE61C8D0B6EC0D6861FA98 /* PBXTargetDependency */,
+				3BCE2DE42682C73847B5F033 /* PBXTargetDependency */,
+			);
+			name = "Pods-DailyPicChallenge";
+			productName = "Pods-DailyPicChallenge";
+			productReference = C1AD3FBB1D56AD03F016BA77 /* Pods_DailyPicChallenge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3F5EAE84505535BD92768497 /* Project object */ = {
+		013C29F19838FE545D044BA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 5AAC5C22CBA7A8B57259CFC5 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 8EDC20B5E66C017EF0E92C6C /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A474D568DB6870067D2180F0;
-			productRefGroup = A081AB30D4CE844D4A057A87 /* Products */;
+			mainGroup = A77B9C2B4C7A0CAEA6171F93;
+			productRefGroup = AF2950DE979202B7D0863B8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				631781839C864E98956C3B57 /* Pods-DailyPicChallenge */,
-				63E15514EF8BFD3C21AA7A06 /* Pods-DailyPicChallenge-Bond */,
+				D6D446B09E9E72545D209E3E /* Pods-DailyPicChallenge */,
+				D162E86AC101A07A2DFCE3E6 /* Pods-DailyPicChallenge-Bolts */,
+				6A07DDADBA1416F1031B3BB8 /* Pods-DailyPicChallenge-Bond */,
+				2797052FEA68632794EF44B4 /* Pods-DailyPicChallenge-Parse */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D2A6B4DCBF617021FE10B41 /* Sources */ = {
+		21A3044A31C1C02F79A68B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B404C8CCDFF2F09912A5D8F8 /* Pods-DailyPicChallenge-dummy.m in Sources */,
+				6515733DC9FAE8A710155C0A /* Pods-DailyPicChallenge-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F0743C995D078E3D0C99D12 /* Sources */ = {
+		3878C2A1DA0970B002B94199 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A403A8A6076D13A8FFA5C287 /* Bond+Arrays.swift in Sources */,
-				DF9A523A2F6ED1C5664415C2 /* Bond+CALayer.swift in Sources */,
-				403AC6097A54BE8521252A4C /* Bond+Foundation.swift in Sources */,
-				5D39ECE963D5FC581C5158BC /* Bond+Functional.swift in Sources */,
-				F5D1354E26F542B359370502 /* Bond+NSLayoutConstraint.swift in Sources */,
-				787162CBF867B0D52CABC9EB /* Bond+Operators.swift in Sources */,
-				8604B5BF0A8B9E937EBC670B /* Bond+UIActivityIndicatorView.swift in Sources */,
-				A12CD5E79BF8C2643CAAA930 /* Bond+UIBarItem.swift in Sources */,
-				207EDB939AFB4E48F5E0CE0C /* Bond+UIButton.swift in Sources */,
-				59B3524CB2113B09F195DD93 /* Bond+UICollectionView.swift in Sources */,
-				D3B9D4F3A7A7CCDAE71C68A7 /* Bond+UIDatePicker.swift in Sources */,
-				2D6749AE2D8C6A6FD7143EA4 /* Bond+UIImageView.swift in Sources */,
-				598D0887D4B841CDC2215D13 /* Bond+UILabel.swift in Sources */,
-				5ED9B062F079AAE6ECC17067 /* Bond+UINavigationItem.swift in Sources */,
-				2FD8EB54E0F5930D1CB6C65B /* Bond+UIProgressView.swift in Sources */,
-				1A9503895E69A6B8055BF598 /* Bond+UISlider.swift in Sources */,
-				3F9FFD0D343AFA274E4A60EA /* Bond+UISwitch.swift in Sources */,
-				00349B9355BE6B8B69E9B15B /* Bond+UITableView.swift in Sources */,
-				A95F4EA2A64A580B970F6976 /* Bond+UITextField.swift in Sources */,
-				7374AB5A838397CD63C1ECC1 /* Bond+UITextView.swift in Sources */,
-				AC96C24CDE6369DDE07C6245 /* Bond+UIView.swift in Sources */,
-				2A3DA8BA4997FBB022A28EC0 /* Bond.swift in Sources */,
-				9B5BD29481D9E37B0536C4EF /* Pods-DailyPicChallenge-Bond-dummy.m in Sources */,
+				3B83CC75D9B3431973374023 /* Empty.m in Sources */,
+				768FBC07A8E2DE3A89389ED8 /* Pods-DailyPicChallenge-Parse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C749D450538DFE4AF3009F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E904E362A29C62A9F7A4344D /* BFCancellationToken.m in Sources */,
+				DC2F42641B8FCD06EB21ED7A /* BFCancellationTokenRegistration.m in Sources */,
+				0E4A854311F576F09EDDF171 /* BFCancellationTokenSource.m in Sources */,
+				B49336C5E43707C03643C6A2 /* BFExecutor.m in Sources */,
+				8B028DFA3D75EB18AD687497 /* BFTask.m in Sources */,
+				8681D2059072FEAF1CFE5B4B /* BFTaskCompletionSource.m in Sources */,
+				719FB6790F8A77A045A743DF /* Bolts.m in Sources */,
+				9EEF7C010BC6F3EC84E74846 /* Pods-DailyPicChallenge-Bolts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E51D5049DCFAFFD1338288C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B09637A4B0190981981B71 /* Bond+Arrays.swift in Sources */,
+				20A8492DA3BB2BD2BDD631DF /* Bond+CALayer.swift in Sources */,
+				0E1E43DBCB9B92AB5EF135C4 /* Bond+Foundation.swift in Sources */,
+				035ECB8EF2D5E3858BAB7B49 /* Bond+Functional.swift in Sources */,
+				E650B8FD10DF5B73095E71F3 /* Bond+NSLayoutConstraint.swift in Sources */,
+				3165CA08E068A6983A3BFA5C /* Bond+Operators.swift in Sources */,
+				AA2073C01B206B6B1959FA6B /* Bond+UIActivityIndicatorView.swift in Sources */,
+				AEE95461C5CC9EB6C145CDA2 /* Bond+UIBarItem.swift in Sources */,
+				8BA90E54B487E281D5DA6689 /* Bond+UIButton.swift in Sources */,
+				973E3FCF2AA357975CBC2178 /* Bond+UICollectionView.swift in Sources */,
+				FD7844B54C4FB5BCFA568E01 /* Bond+UIDatePicker.swift in Sources */,
+				CD02A4A6260E4C7E9B635C0E /* Bond+UIImageView.swift in Sources */,
+				E8A093E83417F4D12C99F967 /* Bond+UILabel.swift in Sources */,
+				1793F79382913EFFEF7F5823 /* Bond+UINavigationItem.swift in Sources */,
+				C58B978CC8214110786E1DE3 /* Bond+UIProgressView.swift in Sources */,
+				0541D93F336FEC59B26E3851 /* Bond+UISlider.swift in Sources */,
+				902FBB1D61174668A8BD0525 /* Bond+UISwitch.swift in Sources */,
+				EE1B8019D52C2794F15F1C66 /* Bond+UITableView.swift in Sources */,
+				3356AEC11CBF983F828AB07D /* Bond+UITextField.swift in Sources */,
+				854CC8A888E0D3853CDF2C29 /* Bond+UITextView.swift in Sources */,
+				9E205CCA8D6BBBE7D62D93BB /* Bond+UIView.swift in Sources */,
+				E943F42D1206F2616A8E76D3 /* Bond.swift in Sources */,
+				24671C017D508AA9ADCFFC31 /* Pods-DailyPicChallenge-Bond-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E71197ECE202EEE6DF82BFB3 /* PBXTargetDependency */ = {
+		0835475C5FE5DD28B3D82533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DailyPicChallenge-Bolts";
+			target = D162E86AC101A07A2DFCE3E6 /* Pods-DailyPicChallenge-Bolts */;
+			targetProxy = 56DC415CE6F8A9CD0007F3BD /* PBXContainerItemProxy */;
+		};
+		13AE61C8D0B6EC0D6861FA98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DailyPicChallenge-Bond";
-			target = 63E15514EF8BFD3C21AA7A06 /* Pods-DailyPicChallenge-Bond */;
-			targetProxy = 20A6DFE52181036CA5683057 /* PBXContainerItemProxy */;
+			target = 6A07DDADBA1416F1031B3BB8 /* Pods-DailyPicChallenge-Bond */;
+			targetProxy = 11A8A9A07F17A777D488865A /* PBXContainerItemProxy */;
+		};
+		3BCE2DE42682C73847B5F033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DailyPicChallenge-Parse";
+			target = 2797052FEA68632794EF44B4 /* Pods-DailyPicChallenge-Parse */;
+			targetProxy = EF815088FE638F5138286042 /* PBXContainerItemProxy */;
+		};
+		8471AF37E6F67593F8C08BAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DailyPicChallenge-Bolts";
+			target = D162E86AC101A07A2DFCE3E6 /* Pods-DailyPicChallenge-Bolts */;
+			targetProxy = 38F8145BB762B3619151BB28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2EC77723D2EDC2F314B744C0 /* Release */ = {
+		0E01FD001C47F668DF41C103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E644AC5C927F85D4E5BAAC20 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bond;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23A8EA180539584EAB698EC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -406,7 +847,175 @@
 			};
 			name = Release;
 		};
-		40500DA0875C9668FB3AA0C5 /* Debug */ = {
+		4C80264BC90C057E345DD83D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9976E2669EA1D763BF52F3 /* Pods-DailyPicChallenge-Parse-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Parse/Pods-DailyPicChallenge-Parse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Parse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Parse/Pods-DailyPicChallenge-Parse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Parse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A2F2A0258126CD5909BA37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E644AC5C927F85D4E5BAAC20 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bond;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		808135F02CCC0BB3D6586EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF8B5F881826592B329602F /* Pods-DailyPicChallenge.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DailyPicChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87EB14631C83FCD9464921CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C759F93F7AC391B6BFA8600F /* Pods-DailyPicChallenge.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DailyPicChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9C11B71866BCCC36AA7C91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9976E2669EA1D763BF52F3 /* Pods-DailyPicChallenge-Parse-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Parse/Pods-DailyPicChallenge-Parse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Parse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Parse/Pods-DailyPicChallenge-Parse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Parse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAF73F045DB81CF1A10EE8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593E5DE148AB082447476494 /* Pods-DailyPicChallenge-Bolts-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Bolts/Pods-DailyPicChallenge-Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Bolts/Pods-DailyPicChallenge-Bolts.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E53743D468A8CD06F90F9519 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,9 +1054,9 @@
 			};
 			name = Debug;
 		};
-		53875D8E1E5EB4CC2B6A762E /* Release */ = {
+		F1D517F6022603812B2AA598 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1200EEB66233433C0AFDF5 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */;
+			baseConfigurationReference = 593E5DE148AB082447476494 /* Pods-DailyPicChallenge-Bolts-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -456,14 +1065,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Bolts/Pods-DailyPicChallenge-Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Bolts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Bolts/Pods-DailyPicChallenge-Bolts.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Bond;
+				PRODUCT_NAME = Bolts;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,125 +1080,56 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		55DF46E223A6D4BDBC273898 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FB362FF9EB565F4FFE13845 /* Pods-DailyPicChallenge.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DailyPicChallenge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DDF47EAEFA3E2C19BCC0F874 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1200EEB66233433C0AFDF5 /* Pods-DailyPicChallenge-Bond-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge-Bond/Pods-DailyPicChallenge-Bond.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Bond;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F34E6D32470A2985FD7BDA44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1E1AC925F7F6BAFCFFB672B /* Pods-DailyPicChallenge.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DailyPicChallenge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DailyPicChallenge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47045819D7189AC60C408797 /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge" */ = {
+		8EDC20B5E66C017EF0E92C6C /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F34E6D32470A2985FD7BDA44 /* Debug */,
-				55DF46E223A6D4BDBC273898 /* Release */,
+				E53743D468A8CD06F90F9519 /* Debug */,
+				23A8EA180539584EAB698EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AAC5C22CBA7A8B57259CFC5 /* Build configuration list for PBXProject "Pods" */ = {
+		A5CB7910945EFD138C18C80E /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Bond" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40500DA0875C9668FB3AA0C5 /* Debug */,
-				2EC77723D2EDC2F314B744C0 /* Release */,
+				7A2F2A0258126CD5909BA37A /* Debug */,
+				0E01FD001C47F668DF41C103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6503F3AFA5E9BAA024B4C040 /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Bond" */ = {
+		B09032A77DD23BFB107535F2 /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Bolts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDF47EAEFA3E2C19BCC0F874 /* Debug */,
-				53875D8E1E5EB4CC2B6A762E /* Release */,
+				CAF73F045DB81CF1A10EE8EF /* Debug */,
+				F1D517F6022603812B2AA598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0643E208BDDE9195F74504D /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EB14631C83FCD9464921CC /* Debug */,
+				808135F02CCC0BB3D6586EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F02577C428BF10AAB466E3EC /* Build configuration list for PBXNativeTarget "Pods-DailyPicChallenge-Parse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C11B71866BCCC36AA7C91C /* Debug */,
+				4C80264BC90C057E345DD83D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3F5EAE84505535BD92768497 /* Project object */;
+	rootObject = 013C29F19838FE545D044BA9 /* Project object */;
 }

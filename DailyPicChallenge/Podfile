@@ -7,6 +7,7 @@ use_frameworks!
 target 'DailyPicChallenge' do
 
 pod 'Bond', '~> 3.7'
+pod 'Parse'
 
 end
 

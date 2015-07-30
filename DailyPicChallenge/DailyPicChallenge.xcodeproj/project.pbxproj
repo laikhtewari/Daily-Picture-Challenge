@@ -17,12 +17,6 @@
 		CB7678ED1B5D93BF00E91F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7678EC1B5D93BF00E91F14 /* Images.xcassets */; };
 		CB7678F01B5D93BF00E91F14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7678EE1B5D93BF00E91F14 /* LaunchScreen.xib */; };
 		CB7678FC1B5D93BF00E91F14 /* DailyPicChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7678FB1B5D93BF00E91F14 /* DailyPicChallengeTests.swift */; };
-		CB76790C1B5D93F200E91F14 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679061B5D93F200E91F14 /* Bolts.framework */; };
-		CB76790D1B5D93F200E91F14 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679071B5D93F200E91F14 /* Parse.framework */; };
-		CB76790E1B5D93F200E91F14 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679081B5D93F200E91F14 /* ParseCrashReporting.framework */; };
-		CB76790F1B5D93F200E91F14 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679091B5D93F200E91F14 /* ParseFacebookUtils.framework */; };
-		CB7679101B5D93F200E91F14 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB76790A1B5D93F200E91F14 /* ParseFacebookUtilsV4.framework */; };
-		CB7679111B5D93F200E91F14 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB76790B1B5D93F200E91F14 /* ParseUI.framework */; };
 		CB7679151B5D940A00E91F14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679141B5D940A00E91F14 /* AudioToolbox.framework */; };
 		CB7679171B5D941000E91F14 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679161B5D941000E91F14 /* CFNetwork.framework */; };
 		CB7679191B5D941400E91F14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679181B5D941400E91F14 /* CoreGraphics.framework */; };
@@ -67,12 +61,6 @@
 		CB7678F51B5D93BF00E91F14 /* DailyPicChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyPicChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7678FA1B5D93BF00E91F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7678FB1B5D93BF00E91F14 /* DailyPicChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPicChallengeTests.swift; sourceTree = "<group>"; };
-		CB7679061B5D93F200E91F14 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		CB7679071B5D93F200E91F14 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		CB7679081B5D93F200E91F14 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		CB7679091B5D93F200E91F14 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		CB76790A1B5D93F200E91F14 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		CB76790B1B5D93F200E91F14 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		CB7679121B5D93FF00E91F14 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CB7679141B5D940A00E91F14 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CB7679161B5D941000E91F14 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -110,12 +98,6 @@
 				CB7679191B5D941400E91F14 /* CoreGraphics.framework in Frameworks */,
 				CB7679171B5D941000E91F14 /* CFNetwork.framework in Frameworks */,
 				CB7679151B5D940A00E91F14 /* AudioToolbox.framework in Frameworks */,
-				CB7679111B5D93F200E91F14 /* ParseUI.framework in Frameworks */,
-				CB76790D1B5D93F200E91F14 /* Parse.framework in Frameworks */,
-				CB76790E1B5D93F200E91F14 /* ParseCrashReporting.framework in Frameworks */,
-				CB76790F1B5D93F200E91F14 /* ParseFacebookUtils.framework in Frameworks */,
-				CB76790C1B5D93F200E91F14 /* Bolts.framework in Frameworks */,
-				CB7679101B5D93F200E91F14 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				B1186464683AADCA150737B5 /* Pods_DailyPicChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +136,6 @@
 				CB7679161B5D941000E91F14 /* CFNetwork.framework */,
 				CB7679141B5D940A00E91F14 /* AudioToolbox.framework */,
 				CB7679121B5D93FF00E91F14 /* Accounts.framework */,
-				CB7679051B5D93F200E91F14 /* parse-library-1 */,
 				CB7678E21B5D93BF00E91F14 /* DailyPicChallenge */,
 				CB7678F81B5D93BF00E91F14 /* DailyPicChallengeTests */,
 				CB7678E11B5D93BF00E91F14 /* Products */,
@@ -215,19 +196,6 @@
 				CB7678FA1B5D93BF00E91F14 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB7679051B5D93F200E91F14 /* parse-library-1 */ = {
-			isa = PBXGroup;
-			children = (
-				CB7679061B5D93F200E91F14 /* Bolts.framework */,
-				CB7679071B5D93F200E91F14 /* Parse.framework */,
-				CB7679081B5D93F200E91F14 /* ParseCrashReporting.framework */,
-				CB7679091B5D93F200E91F14 /* ParseFacebookUtils.framework */,
-				CB76790A1B5D93F200E91F14 /* ParseFacebookUtilsV4.framework */,
-				CB76790B1B5D93F200E91F14 /* ParseUI.framework */,
-			);
-			path = "parse-library-1";
 			sourceTree = "<group>";
 		};
 		CF62B6FFC26C60741D9F94BE /* Pods */ = {
