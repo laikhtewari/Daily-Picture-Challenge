@@ -111,10 +111,7 @@ class TodaysPicsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func voteButtonTapped(sender: AnyObject) {
-        
-    }
+    
 }
 
 extension TodaysPicsViewController: UITabBarControllerDelegate {
@@ -142,8 +139,8 @@ extension TodaysPicsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostTableViewCell
         
         cell.postImageView.image = posts[indexPath.row].image
+        cell.post = posts[indexPath.row]
         
         return cell
     }
-    
 }

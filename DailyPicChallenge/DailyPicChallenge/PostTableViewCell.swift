@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Parse
 //import Bond
 
 class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var postImageView: UIImageView!
+    var post: Post?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,15 +26,42 @@ class PostTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    var post:Post? {
-        didSet {
-            // 1
-            if let post = post {
-                //2
-                // bind the image of the post to the 'postImage' view
-               // post.image ->> postImageView
+    @IBAction func flagButtonTapped(sender: UIButton) {
+       
+        println ("flagbutton tapped")
+        
+        var postObjectID = ""
+        
+        let image = self.postImageView.image
+        let imageData = UIImageJPEGRepresentation(image , 0.8 )
+        
+        if let usableData = imageData {
+            println("starting query")
+            
+            let imageFile = PFFile (data: imageData )
+            let postsQuery = Post.query()
+            
+            if let postVar = self.post {
+                postObjectID = self.post!.objectId! as String
+                println("post object ID: " + postObjectID)
             }
+            
+            postsQuery?.whereKey("objectId", equalTo: postObjectID)
+            let post = postsQuery?.getFirstObject()
+            println("query over")
+            
+            
+//            let flag: FlaggedContent = ParseHelper.flagContent(post! as! Post)
+//
+            ParseHelper.flagContent(post as! Post)
+            //flag.saveInBackgroundWithBlock(nil)
+            println ("saving flag")
         }
     }
+    
+    @IBAction func voteButtonTapped(sender: AnyObject) {
+        ParseHelper.vote(self.post!)
+    }
+    
 
 }

@@ -31,6 +31,7 @@ class Challenge: PFObject, PFSubclassing {
     func createChallenge ( challenge: String )
     {
         self.challenge = challenge
+        self.saveInBackgroundWithBlock(nil)
     }
    
 }

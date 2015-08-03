@@ -55,7 +55,16 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="voteButtonTapped:" destination="NHS-wd-epi" eventType="touchUpInside" id="dHV-ym-hnE"/>
+                                                        <action selector="voteButtonTapped:" destination="fOh-OC-DBl" eventType="touchUpInside" id="ahY-zM-v0T"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If7-iP-j2D">
+                                                    <rect key="frame" x="8" y="371" width="30" height="30"/>
+                                                    <state key="normal" title="Flag">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="flagButtonTapped:" destination="fOh-OC-DBl" eventType="touchUpInside" id="zH8-uE-uM0"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

@@ -32,9 +32,18 @@ class ParseHelper {
     
     static func todaysPosts ( todaysChallenge: PFObject?, todaysPostsQuery: PFQuery? )
     {
+        println("this method was called")
         if let challengeObject = todaysChallenge
         {
             todaysPostsQuery?.whereKey("challenge", equalTo: challengeObject)
+            
+            let flaggedPostsQuery = FlaggedContent.query()
+            flaggedPostsQuery?.whereKey("objectId", notEqualTo: "")
+            
+            println("flagged posts query: \(flaggedPostsQuery)")
+            
+            println("STARTING FILTER OF POSTS")
+            todaysPostsQuery?.whereKey("objectId", doesNotMatchKey: "toPost", inQuery: flaggedPostsQuery!)
             
             todaysPostsQuery!.orderByDescending("createdAt")
         }
@@ -45,10 +54,12 @@ class ParseHelper {
         post["challenge"] = challenge
     }
     
-    static func vote ( fromUser: PFUser, toPost: PFObject )
+    static func vote ( toPost: PFObject )
     {
         let vote = Vote()
-        vote["fromUser"] = fromUser
+        vote.toPost = toPost as! Post
+        vote.fromUser = PFUser.currentUser()!
+        vote["fromUser"] = PFUser.currentUser()
         vote["toPicture"] = toPost
         
         vote.saveInBackgroundWithBlock(nil)
@@ -69,5 +80,17 @@ class ParseHelper {
                 }
             }
         }
+    }
+    
+    static func flagContent ( toPost: Post )  {
+        var flag = FlaggedContent()
+        flag.fromUser = PFUser.currentUser()
+        flag.toPost = toPost
+        //flag.setPost(toPost)
+        println("Post: \(flag.toPost)")
+        //toPost.flag = flag
+        
+        flag.saveInBackgroundWithBlock(nil)
+        //return flag
     }
 }

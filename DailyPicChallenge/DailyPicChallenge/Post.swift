@@ -13,6 +13,9 @@ import Parse
 class Post: PFObject, PFSubclassing {
     @NSManaged var imageFile: PFFile?
     @NSManaged var user: PFUser?
+    @NSManaged var flag: FlaggedContent?
+    
+    var flagged = false;
     
     var photoUploadTask: UIBackgroundTaskIdentifier?
     var image: UIImage?
@@ -33,28 +36,6 @@ class Post: PFObject, PFSubclassing {
         }
     }
     
-//    func uploadPost ()
-//    {
-//
-//        let qualityOfServiceClass = QOS_CLASS_BACKGROUND
-//        let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
-//        dispatch_async(backgroundQueue, {
-//            let imageData = UIImageJPEGRepresentation(self.image, 0.8)
-//            let imageFile = PFFile(data: imageData )
-//            self.photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
-//                UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
-//            }
-//            
-//            imageFile.saveInBackgroundWithBlock(nil)
-//            
-//            user = PFUser.currentUser()
-//        
-//            self.imageFile = imageFile
-//            self.saveInBackgroundWithBlock(nil)
-//            
-//        })
-//    }
-    
     func uploadPost ()
     {
         let imageData = UIImageJPEGRepresentation(self.image, 0.8)
@@ -73,5 +54,4 @@ class Post: PFObject, PFSubclassing {
         
         println("uploaded")
     }
-    
 }

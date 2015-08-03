@@ -11,6 +11,9 @@ import Parse
 
 class Vote: PFObject, PFSubclassing {
 
+    var toPost: Post!
+    var fromUser: PFUser!
+    
     static func parseClassName() -> String {
         return "Vote"
     }
