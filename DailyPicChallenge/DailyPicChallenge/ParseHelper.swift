@@ -37,13 +37,15 @@ class ParseHelper {
         {
             todaysPostsQuery?.whereKey("challenge", equalTo: challengeObject)
             
-            let flaggedPostsQuery = FlaggedContent.query()
-            flaggedPostsQuery?.whereKey("objectId", notEqualTo: "")
+//            let flaggedPostsQuery = FlaggedContent.query()
+//            flaggedPostsQuery?.whereKey("objectId", notEqualTo: "")
+//            
+//            println("flagged posts query: \(flaggedPostsQuery)")
+//            
+//            println("STARTING FILTER OF POSTS")
+//            todaysPostsQuery?.whereKey("objectId", doesNotMatchKey: "toPost", inQuery: flaggedPostsQuery!)
             
-            println("flagged posts query: \(flaggedPostsQuery)")
-            
-            println("STARTING FILTER OF POSTS")
-            todaysPostsQuery?.whereKey("objectId", doesNotMatchKey: "toPost", inQuery: flaggedPostsQuery!)
+            todaysPostsQuery?.whereKeyDoesNotExist("flag")
             
             todaysPostsQuery!.orderByDescending("createdAt")
         }
@@ -88,9 +90,12 @@ class ParseHelper {
         flag.toPost = toPost
         //flag.setPost(toPost)
         println("Post: \(flag.toPost)")
-        //toPost.flag = flag
+        toPost.flag = flag
         
+        toPost.saveInBackgroundWithBlock(nil)
         flag.saveInBackgroundWithBlock(nil)
+        TodaysPicsViewController.displayAlert("Thank you", alertMessage: "We appreciate you taking the time to flag inappropriate content. This post will be blocked until we review the content in question. Please look at our community guidelines for more information about flagging inappropriate content. We will get back to you as soon as possible and we will take appropriate action.")
+        
         //return flag
     }
 }
