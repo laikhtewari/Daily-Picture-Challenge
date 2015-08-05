@@ -14,8 +14,10 @@ class Post: PFObject, PFSubclassing {
     @NSManaged var imageFile: PFFile?
     @NSManaged var user: PFUser?
     @NSManaged var flag: FlaggedContent?
+//    @NSManaged var totalVoteValue:NSNumber!
+     @NSManaged var totalVoteValue:Int
     
-    var flagged = false;
+    var flagged = false
     
     var photoUploadTask: UIBackgroundTaskIdentifier?
     var image: UIImage?

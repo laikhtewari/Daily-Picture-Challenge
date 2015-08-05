@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     Parse.setApplicationId("XNC5GfNCY1zmSZb48T246rZ85qR4gyb14nvZrRTm", clientKey: "ndNDzJSDeQRKvYcnicCbU8f1jIGEc15uD5TXxWpP")
         
-        PFUser.logInWithUsername("test", password: "test")
-        println ( "\(PFUser.currentUser())" )
+        PFUser.logInWithUsername("LaIkHtEwArIiSaNaDmIn", password: "ThIsIsMyPaSsWoRd2000")
         
         let acl = PFACL()
         acl.setPublicReadAccess(true)

@@ -14,6 +14,7 @@ class TodaysPicsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var challengeLabel: UILabel!
+    @IBOutlet weak var winnerCheckButton: UIButton!
     
     var challenge: PFObject!
     
@@ -38,6 +39,10 @@ class TodaysPicsViewController: UIViewController {
         */
         let alertView = UIAlertView(title: alertTitle, message: alertMessage, delegate: nil, cancelButtonTitle: "OK")
         alertView.show()
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -68,12 +73,28 @@ class TodaysPicsViewController: UIViewController {
             self.tableView.reloadData()
             
         }
+        
+        if PFUser.currentUser()?.username == "LaIkHtEwArIiSaNaDmIn"
+        {
+            winnerCheckButton.hidden = false
+        }
+        else {
+            winnerCheckButton.hidden = true
+        }
     
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func checkWinnerButton(sender: AnyObject) {
+        println ("checkwinnerbutton tapped")
+        
+        let winner = ParseHelper.getWinner("qzKSd73Vjk")
+        winner.save()
+        println("finished saving")
     }
     
     func takePhoto() {
