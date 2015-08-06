@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -27,6 +28,38 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func getStartedTapped(sender: AnyObject) {
+//        let userQuery = PFQuery(className: "User")
+//        var usernameArray: [String]!
+//        
+//        userQuery.findObjectsInBackgroundWithBlock {
+//            (results: [AnyObject]?, error: NSError?) -> Void in
+//            
+//            let userArray = results as? [PFUser] ?? []
+//            
+//            for user in userArray
+//            {
+//                usernameArray.append(user.username!)
+//            }
+//        }
+//        
+//        if let username = self.usernameField.text
+//        {
+//            var contained = false
+//            for obj in usernameArray
+//            {
+//                if obj == username
+//                {
+//                    contained = true
+//                }
+//            }
+//            if contained == false
+//            {
+//                self.T
+//            }
+//        }
+
+    }
 
     /*
     // MARK: - Navigation

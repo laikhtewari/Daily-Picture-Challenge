@@ -82,13 +82,14 @@ class ParseHelper {
         let vote = Vote()
         vote.toPost = toPost
         vote.fromUser = currentUser
-        vote.saveInBackgroundWithBlock(nil)
-        //WRITE THE FOLLOWING CODE IN THE VOTE'S SAVE'S CALLBACK
-        let counterQuery = Vote.query()
-        counterQuery?.whereKey("toPost", equalTo: toPost as PFObject)
-        let numVotes = counterQuery?.countObjects()
-        toPost.totalVoteValue = count!
-        toPost.saveInBackgroundWithBlock(nil)
+        vote.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            let counterQuery = Vote.query()
+            counterQuery?.whereKey("toPost", equalTo: toPost as PFObject)
+            let numVotes = counterQuery?.countObjects()
+            toPost.totalVoteValue = count!
+            toPost.saveInBackgroundWithBlock(nil)
+        }
     }
     
     static func unvote ( fromUser: PFUser, toPost: PFObject)

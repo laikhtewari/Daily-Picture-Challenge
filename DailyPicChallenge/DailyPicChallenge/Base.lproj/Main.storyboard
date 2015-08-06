@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8d-ha-fvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="868"/>
+            <point key="canvasLocation" x="-675" y="1142"/>
         </scene>
         <!--Today's Pics-->
         <scene sceneID="agD-0E-AzB">
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i55-Sm-1m5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="-96"/>
+            <point key="canvasLocation" x="652" y="-208"/>
         </scene>
         <!--Winner-->
         <scene sceneID="b56-mk-5XZ">
@@ -293,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVd-T6-hnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="-868"/>
+            <point key="canvasLocation" x="13" y="-1372"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="d8l-0c-foo">
@@ -307,30 +307,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V84-Ka-mPc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V84-Ka-mPc">
                                 <rect key="frame" x="252" y="153" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="mWo-dI-HW4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-j5-OS2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-j5-OS2">
                                 <rect key="frame" x="252" y="228" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY4-yK-njC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY4-yK-njC">
                                 <rect key="frame" x="279" y="90" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-ys-hAV">
-                                <rect key="frame" x="286" y="404" width="16" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-ys-hAV">
+                                <rect key="frame" x="292" y="404" width="16" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UB-fa-bJR">
-                                <rect key="frame" x="267" y="485" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UB-fa-bJR">
+                                <rect key="frame" x="273" y="485" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -338,26 +341,43 @@
                                     <segue destination="rgo-6S-82W" kind="show" id="F31-xy-jDs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBS-ds-cG7">
-                                <rect key="frame" x="254" y="301" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBS-ds-cG7">
+                                <rect key="frame" x="260" y="301" width="80" height="30"/>
                                 <state key="normal" title="Get Started">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ona-dj-B5P" kind="show" id="1IE-SN-FwH"/>
+                                    <action selector="getStartedButtonTapped:" destination="hhQ-Tg-X2Z" eventType="touchUpInside" id="u4C-FZ-gDa"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jUF-ys-hAV" firstAttribute="top" secondItem="sBS-ds-cG7" secondAttribute="bottom" constant="73" id="0HY-0s-ETF"/>
+                            <constraint firstAttribute="centerX" secondItem="dgs-j5-OS2" secondAttribute="centerX" id="33e-bJ-yKb"/>
+                            <constraint firstItem="V84-Ka-mPc" firstAttribute="leading" secondItem="dgs-j5-OS2" secondAttribute="leading" id="8yx-8A-jyg"/>
+                            <constraint firstItem="V84-Ka-mPc" firstAttribute="top" secondItem="uY4-yK-njC" secondAttribute="bottom" constant="42" id="ROH-F8-OO3"/>
+                            <constraint firstItem="dgs-j5-OS2" firstAttribute="top" secondItem="V84-Ka-mPc" secondAttribute="bottom" constant="45" id="SFT-hK-MOA"/>
+                            <constraint firstAttribute="centerX" secondItem="uY4-yK-njC" secondAttribute="centerX" id="Wwb-xk-pg2"/>
+                            <constraint firstAttribute="centerX" secondItem="V84-Ka-mPc" secondAttribute="centerX" id="YBd-lG-Igv"/>
+                            <constraint firstItem="sBS-ds-cG7" firstAttribute="top" secondItem="dgs-j5-OS2" secondAttribute="bottom" constant="43" id="aSV-pW-gjr"/>
+                            <constraint firstAttribute="centerX" secondItem="sBS-ds-cG7" secondAttribute="centerX" id="dnu-t6-g3K"/>
+                            <constraint firstItem="9UB-fa-bJR" firstAttribute="top" secondItem="jUF-ys-hAV" secondAttribute="bottom" constant="60" id="f5C-mW-RhC"/>
+                            <constraint firstItem="uY4-yK-njC" firstAttribute="top" secondItem="S7O-M2-SNf" secondAttribute="bottom" constant="70" id="msk-W8-9xa"/>
+                            <constraint firstAttribute="centerX" secondItem="9UB-fa-bJR" secondAttribute="centerX" id="t7i-tU-SGo"/>
+                            <constraint firstAttribute="centerX" secondItem="jUF-ys-hAV" secondAttribute="centerX" id="wFC-9w-NiW"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="getStartedButton" destination="sBS-ds-cG7" id="MUx-zF-XBp"/>
                         <outlet property="passwordField" destination="dgs-j5-OS2" id="uth-xp-qlu"/>
                         <outlet property="usernameField" destination="V84-Ka-mPc" id="H9s-iE-8JY"/>
+                        <segue destination="Ona-dj-B5P" kind="show" identifier="loggedIn" id="Fj0-N2-fHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bde-QZ-e2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2201" y="-150"/>
+            <point key="canvasLocation" x="-2745" y="-214"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="qlW-8o-LyK">
@@ -397,6 +417,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="getStartedTapped:" destination="rgo-6S-82W" eventType="touchUpInside" id="LQm-5U-cKy"/>
                                     <segue destination="Ona-dj-B5P" kind="show" id="8pT-LT-PdN"/>
                                 </connections>
                             </button>
@@ -424,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blC-2s-ye4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1443" y="278"/>
+            <point key="canvasLocation" x="-2723" y="1142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aJe-mw-HLc">
@@ -440,17 +461,18 @@
                         <segue destination="NHS-wd-epi" kind="relationship" relationship="viewControllers" id="LPr-LX-py1"/>
                         <segue destination="0t7-WI-LOE" kind="relationship" relationship="viewControllers" id="t06-oT-JmH"/>
                         <segue destination="sRv-Yb-tdi" kind="relationship" relationship="viewControllers" id="X79-2n-h4Z"/>
+                        <segue destination="hhQ-Tg-X2Z" kind="show" identifier="errorLoggingIn" id="1Oi-AM-JsZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQB-Nz-eaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="-150"/>
+            <point key="canvasLocation" x="-675" y="-214"/>
         </scene>
     </scenes>
     <resources>
         <image name="people" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1IE-SN-FwH"/>
+        <segue reference="Fj0-N2-fHd"/>
     </inferredMetricsTieBreakers>
 </document>
