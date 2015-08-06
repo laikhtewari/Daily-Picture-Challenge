@@ -50,10 +50,12 @@ code_sign() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Bolts.framework'
   install_framework 'Bond.framework'
+  install_framework 'Mixpanel.framework'
   install_framework 'Parse.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Bolts.framework'
   install_framework 'Bond.framework'
+  install_framework 'Mixpanel.framework'
   install_framework 'Parse.framework'
 fi

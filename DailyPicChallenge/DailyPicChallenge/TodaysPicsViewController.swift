@@ -92,7 +92,7 @@ class TodaysPicsViewController: UIViewController {
     @IBAction func checkWinnerButton(sender: AnyObject) {
         println ("checkwinnerbutton tapped")
         
-        let winner = ParseHelper.getWinner("qzKSd73Vjk")
+        let winner = ParseHelper.getWinner("NSY90CL4ca")
         winner.save()
         println("finished saving")
     }

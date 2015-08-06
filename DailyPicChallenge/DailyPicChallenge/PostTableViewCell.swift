@@ -60,6 +60,7 @@ class PostTableViewCell: UITableViewCell {
     }
     
     @IBAction func voteButtonTapped(sender: AnyObject) {
+        println("Vote button tapped")
         ParseHelper.vote(self.post!)
     }
     

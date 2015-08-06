@@ -24,6 +24,10 @@ class WinnerViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+        let postQuery = Post.query()
+        postQuery?.whereKey("winner", equalTo: true)
+        
+        
         let winnersQuery = Winner.query()
         
         winnersQuery!.findObjectsInBackgroundWithBlock {
@@ -37,10 +41,11 @@ class WinnerViewController: UIViewController {
                 
                 winner.post.image = UIImage(data: data!, scale: 1.0)
             }
+            
+            winnersQuery?.orderByDescending("createdAt")
+            
+            self.winnerTableView.reloadData()
         }
-        winnersQuery?.orderByAscending("createdAt")
-        
-        self.winnerTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

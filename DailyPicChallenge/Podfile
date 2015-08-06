@@ -8,6 +8,7 @@ target 'DailyPicChallenge' do
 
 pod 'Bond', '~> 3.7'
 pod 'Parse'
+pod 'Mixpanel'
 
 end
 
