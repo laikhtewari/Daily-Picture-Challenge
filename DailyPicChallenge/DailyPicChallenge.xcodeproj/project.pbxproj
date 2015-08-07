@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1186464683AADCA150737B5 /* Pods_DailyPicChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D880F71F3EF384980CC820 /* Pods_DailyPicChallenge.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B1186464683AADCA150737B5 /* Pods_DailyPicChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D880F71F3EF384980CC820 /* Pods_DailyPicChallenge.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB23306F1B62DFBF00C99A75 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23306E1B62DFBF00C99A75 /* Challenge.swift */; };
 		CB2330711B63599D00C99A75 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330701B63599D00C99A75 /* PostTableViewCell.swift */; };
 		CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330721B635F1E00C99A75 /* ParseHelper.swift */; };
