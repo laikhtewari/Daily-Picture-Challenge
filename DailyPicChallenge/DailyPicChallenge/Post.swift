@@ -9,18 +9,19 @@
 
 import UIKit
 import Parse
+import Bond
 
 class Post: PFObject, PFSubclassing {
     @NSManaged var imageFile: PFFile?
     @NSManaged var user: PFUser?
     @NSManaged var flag: FlaggedContent?
-//    @NSManaged var totalVoteValue:NSNumber!
-     @NSManaged var totalVoteValue:Int
+    @NSManaged var totalVoteValue: Int
+    @NSManaged var challenge: Challenge?
     
     var flagged = false
     
     var photoUploadTask: UIBackgroundTaskIdentifier?
-    var image: UIImage?
+    var image: Dynamic<UIImage?> = Dynamic(nil)
     
     
     static func parseClassName() -> String {
@@ -40,7 +41,7 @@ class Post: PFObject, PFSubclassing {
     
     func uploadPost ()
     {
-        let imageData = UIImageJPEGRepresentation(self.image, 0.8)
+        let imageData = UIImageJPEGRepresentation(self.image.value, 0.5)
         let imageFile = PFFile(data: imageData )
         self.photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
                 UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
@@ -55,5 +56,20 @@ class Post: PFObject, PFSubclassing {
         self.saveInBackgroundWithBlock(nil)
         
         println("uploaded")
+    }
+    
+    func downloadImage() {
+        // if image is not downloaded yet, get it
+        // 1
+        if (image.value == nil) {
+            // 2
+            imageFile?.getDataInBackgroundWithBlock { (data: NSData?, error: NSError?) -> Void in
+                if let data = data {
+                    let image = UIImage(data: data, scale:1.0)!
+                    // 3
+                    self.image.value = image
+                }
+            }
+        }
     }
 }

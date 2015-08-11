@@ -12,7 +12,6 @@
 		CB2330711B63599D00C99A75 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330701B63599D00C99A75 /* PostTableViewCell.swift */; };
 		CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330721B635F1E00C99A75 /* ParseHelper.swift */; };
 		CB433E9E1B66F76A007A124C /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB433E9D1B66F76A007A124C /* Vote.swift */; };
-		CB445AE51B717FF8007A5F68 /* Winner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB445AE41B717FF8007A5F68 /* Winner.swift */; };
 		CB445AE71B7183B5007A5F68 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB445AE61B7183B5007A5F68 /* WinnerViewController.swift */; };
 		CB445AE91B718654007A5F68 /* WinnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB445AE81B718654007A5F68 /* WinnerTableViewCell.swift */; };
 		CB6FCAB71B6BF6F900E2724B /* FlaggedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FCAB61B6BF6F900E2724B /* FlaggedContent.swift */; };
@@ -37,6 +36,7 @@
 		CB76792F1B5EAFA300E91F14 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76792E1B5EAFA300E91F14 /* Picture.swift */; };
 		CB767B171B615FA900E91F14 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB767B161B615FA800E91F14 /* Post.swift */; };
 		CB88FAF41B6976E00007FBFC /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB88FAF31B6976E00007FBFC /* Bond.framework */; };
+		CB9409C71B78312F003E6A08 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9409C61B78312F003E6A08 /* ForgotPasswordViewController.swift */; };
 		CBD1742A1B73C08000E7C25A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD174291B73C08000E7C25A /* LoginViewController.swift */; };
 		CBD1742C1B73C09700E7C25A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1742B1B73C09700E7C25A /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +58,6 @@
 		CB2330701B63599D00C99A75 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		CB2330721B635F1E00C99A75 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 		CB433E9D1B66F76A007A124C /* Vote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
-		CB445AE41B717FF8007A5F68 /* Winner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Winner.swift; sourceTree = "<group>"; };
 		CB445AE61B7183B5007A5F68 /* WinnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
 		CB445AE81B718654007A5F68 /* WinnerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnerTableViewCell.swift; sourceTree = "<group>"; };
 		CB6FCAB61B6BF6F900E2724B /* FlaggedContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlaggedContent.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		CB76792E1B5EAFA300E91F14 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		CB767B161B615FA800E91F14 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CB88FAF31B6976E00007FBFC /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = "Pods/../build/Debug-iphoneos/Pods-DailyPicChallenge/Bond.framework"; sourceTree = "<group>"; };
+		CB9409C61B78312F003E6A08 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		CBD174291B73C08000E7C25A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CBD1742B1B73C09700E7C25A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EFAC237CBF9241288B5465E5 /* Pods-DailyPicChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPicChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyPicChallenge/Pods-DailyPicChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,11 +177,11 @@
 				CB445AE61B7183B5007A5F68 /* WinnerViewController.swift */,
 				CBD174291B73C08000E7C25A /* LoginViewController.swift */,
 				CBD1742B1B73C09700E7C25A /* SignUpViewController.swift */,
+				CB9409C61B78312F003E6A08 /* ForgotPasswordViewController.swift */,
 				CB76792C1B5D960800E91F14 /* CameraViewController.swift */,
 				CB76792E1B5EAFA300E91F14 /* Picture.swift */,
 				CB767B161B615FA800E91F14 /* Post.swift */,
 				CB23306E1B62DFBF00C99A75 /* Challenge.swift */,
-				CB445AE41B717FF8007A5F68 /* Winner.swift */,
 				CB433E9D1B66F76A007A124C /* Vote.swift */,
 				CB6FCAB61B6BF6F900E2724B /* FlaggedContent.swift */,
 				CB2330701B63599D00C99A75 /* PostTableViewCell.swift */,
@@ -377,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9409C71B78312F003E6A08 /* ForgotPasswordViewController.swift in Sources */,
 				CBD1742A1B73C08000E7C25A /* LoginViewController.swift in Sources */,
 				CB2330711B63599D00C99A75 /* PostTableViewCell.swift in Sources */,
 				CB76792F1B5EAFA300E91F14 /* Picture.swift in Sources */,
@@ -384,7 +385,6 @@
 				CB7678E61B5D93BF00E91F14 /* AppDelegate.swift in Sources */,
 				CB76792B1B5D95F800E91F14 /* TodaysPicsViewController.swift in Sources */,
 				CB76792D1B5D960800E91F14 /* CameraViewController.swift in Sources */,
-				CB445AE51B717FF8007A5F68 /* Winner.swift in Sources */,
 				CB767B171B615FA900E91F14 /* Post.swift in Sources */,
 				CBD1742C1B73C09700E7C25A /* SignUpViewController.swift in Sources */,
 				CB433E9E1B66F76A007A124C /* Vote.swift in Sources */,

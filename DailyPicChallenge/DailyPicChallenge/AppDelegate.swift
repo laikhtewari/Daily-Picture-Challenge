@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Mixpanel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Mixpanel.sharedInstanceWithToken("c661c091a83398e973d261e007fcb367")
+        let mixpanel: Mixpanel = Mixpanel.sharedInstance()
+        mixpanel.track("App launched")
         
     Parse.setApplicationId("XNC5GfNCY1zmSZb48T246rZ85qR4gyb14nvZrRTm", clientKey: "ndNDzJSDeQRKvYcnicCbU8f1jIGEc15uD5TXxWpP")
         

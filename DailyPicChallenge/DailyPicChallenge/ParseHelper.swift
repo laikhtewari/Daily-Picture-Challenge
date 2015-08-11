@@ -8,6 +8,7 @@
 
 import Foundation
 import Parse
+import Mixpanel
 
 class ParseHelper {
     
@@ -26,13 +27,12 @@ class ParseHelper {
             return (todaysChallengeString, todaysChallenge)
         } else {
             TodaysPicsViewController.displayAlert("Error", alertMessage: "Unable to retrieve today's challenge")
-            return ("No Challenge", todaysChallenge)
+            return ("No Challenge", nil)
         }
     }
     
     static func todaysPosts ( todaysChallenge: PFObject?, todaysPostsQuery: PFQuery? )
     {
-        println("this method was called")
         if let challengeObject = todaysChallenge
         {
             todaysPostsQuery?.whereKey("challenge", equalTo: challengeObject)
@@ -51,7 +51,14 @@ class ParseHelper {
         }
     }
     
-    static func addChallengeToPost ( post: PFObject, challenge: PFObject )
+    static func addChallengeToPost ( post: Post, challenge: PFObject )
+    {
+        let localChallenge = challenge as! Challenge
+        post.challenge = localChallenge
+        
+    }
+    
+    static func addChallengeToPost( post: PFObject, challenge: PFObject)
     {
         post["challenge"] = challenge
     }
@@ -88,15 +95,26 @@ class ParseHelper {
             counterQuery?.whereKey("toPost", equalTo: toPost as PFObject)
             let numVotes = counterQuery?.countObjects()
             toPost.totalVoteValue = count!
-            toPost.saveInBackgroundWithBlock(nil)
+            toPost.saveInBackgroundWithBlock({ (success: Bool, error: NSError?) -> Void in
+                println("total vote count updated")
+            })
         }
+        
+//        let postsQuery = Post.query()
+//        postsQuery?.whereKey("fromUser", equalTo: currentUser)
+//        postsQuery?.countObjectsInBackgroundWithBlock({ (num: Int32, error: NSError?) -> Void in
+//            if num != 0
+//            {
+//                Mixpanel.track(Mixpanel)
+//            }
+//        })
     }
     
     static func unvote ( fromUser: PFUser, toPost: PFObject)
     {
         let voteQuery = Vote.query()
         voteQuery?.whereKey("fromUser", equalTo: fromUser)
-        voteQuery?.whereKey("toPicture", equalTo: toPost)
+        voteQuery?.whereKey("toPost", equalTo: toPost)
         
         voteQuery!.findObjectsInBackgroundWithBlock {
             (results: [AnyObject]?, error: NSError?) -> Void in
@@ -124,49 +142,95 @@ class ParseHelper {
         //return flag
     }
     
-    static func getWinner ( challenge: Challenge ) /*-> Post*/ {
+    static func timelineRequestforCurrentUser( completionBlock: PFArrayResultBlock) {
+//        let followingQuery = PFQuery(className: ParseFollowClass)
+//        followingQuery.whereKey(ParseLikeFromUser, equalTo:PFUser.currentUser()!)
+//        
+//        let postsFromFollowedUsers = Post.query()
+//        postsFromFollowedUsers!.whereKey(ParsePostUser, matchesKey: ParseFollowToUser, inQuery: followingQuery)
+//        
+//        let postsFromThisUser = Post.query()
+//        postsFromThisUser!.whereKey(ParsePostUser, equalTo: PFUser.currentUser()!)
+//        
+//        let query = PFQuery.orQueryWithSubqueries([postsFromFollowedUsers!, postsFromThisUser!])
+//        query.includeKey(ParsePostUser)
+//        query.orderByDescending(ParsePostCreatedAt)
+//        
+//        query.skip = range.startIndex
+//        query.limit = range.endIndex - range.startIndex
+//        
+//        query.findObjectsInBackgroundWithBlock(completionBlock)
         
-        //        var votedPost: Post!
-        //        let posts = Post.query()
-        //        let todaysChallenge = self.todaysChallenge().challengeObject
-        //        posts?.whereKey("challenge", equalTo: todaysChallenge!)
-        //
-        //        posts!.findObjectsInBackgroundWithBlock {
-        //            ( results: [AnyObject]?, error: NSError? ) -> Void in
-        //
-        //            if let postArray = results as? [Post]
-        //            {
-        //                var numVotes = 0
-        //                var count = 0
-        //                for posts in postArray
-        //                {
-        //                    count++
-        //                    println("Reps = \(count)")
-        //                    let thisPostsVotes = posts.totalVoteValue
-        //                    if thisPostsVotes > numVotes
-        //                    {
-        //                        votedPost = posts
-        //                        numVotes = thisPostsVotes
-        //                    }
-        //                }
-        //            }
-        //        }
-        //        return votedPost
+        
+        let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
+        let challenge = todaysChallenge
+        
+        let todaysPostsQuery = Post.query()
+        
+        ParseHelper.todaysPosts(todaysChallenge, todaysPostsQuery: todaysPostsQuery)
+        
+        todaysPostsQuery!.findObjectsInBackgroundWithBlock(completionBlock)
+            
+//            {
+//            (result: [AnyObject]?, error: NSError?) -> Void in
+//            // 8
+//            self.posts = result as? [Post] ?? []
+//            
+//            for post in self.posts {
+//                // 2
+//                let data = post.imageFile?.getData()
+//                // 3
+//                post.image.value = UIImage(data: data!, scale:1.0)
+//            }
+        
+            // 9
+//            self.tableView.reloadData()
+        
+//        }
+        
     }
     
-    static func getWinner ( objectId: String ) -> Winner
+    static func winnerPostsRequest ( completionBlock: PFArrayResultBlock )
     {
         let postQuery = Post.query()
-        postQuery?.whereKey("objectId", equalTo: objectId)
-        let winnerPost = postQuery?.getFirstObject() as! Post
-        let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
-        let winner = Winner()
-        winner.user = winnerPost.user
-        winner.post = winnerPost
-        winner.challenge = todaysChallenge as! Challenge
+        postQuery?.whereKey("winner", equalTo: true)
         
-        winner.saveInBackgroundWithBlock(nil)
+        postQuery?.findObjectsInBackgroundWithBlock(completionBlock)
+    }
+    
+    static func getInfoWithPost ( post: Post ) -> (challenge: String, username: String)    {
+//        let postObject = post as PFObject
+//        var challengeObject = postObject["challenge"] as! PFObject
+//        let challengeQuery = Challenge.query()
+//        challengeObject = challengeQuery?.getObjectWithId(challengeObject.objectId!)
+//        let challengeString = challengeObject["challenge"] as! String
+//        let objectID = challengeObject.objectId
+//        let challengeQuery = Challenge.query()
+//        let object = challengeQuery?.getObjectWithId(objectID)
+//        return (challengeString, challengeObject)
         
-        return winner
+//        let parsePost = post as PFObject
+//        let challengeObject = parsePost["challenge"] as! PFObject
+//        let challengeString = challengeObject["challenge"] as! String
+//        let challenge = parsePost["challenge"] as! Challenge
+//        let challengeString = challenge.challenge
+        
+        let image = post.imageFile
+        let postQuery = Post.query()
+        postQuery?.whereKey("imageFile", equalTo: image!)
+        
+        let list = postQuery!.findObjects()
+        let post = list?.first as! PFObject
+        let challenge = post["challenge"] as! PFObject
+        let user = post["fromUser"] as! PFUser
+        let username = user.username
+        let challengeID = challenge.objectId
+        
+        let challengeQuery = Challenge.query()
+        let challengeObject = challengeQuery?.getObjectWithId(challengeID!) as! Challenge
+        let challengeString = challengeObject.challenge
+        
+        return (challengeString, username!)
+        
     }
 }

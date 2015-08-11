@@ -14,7 +14,8 @@ class TodaysPicsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var challengeLabel: UILabel!
-    @IBOutlet weak var winnerCheckButton: UIButton!
+    
+    var memoryWarningCount = 0
     
     var challenge: PFObject!
     
@@ -28,15 +29,13 @@ class TodaysPicsViewController: UIViewController {
         self.tabBarController?.delegate = self
         self.tableView.dataSource = self
         
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
     static func displayAlert(alertTitle: String, alertMessage: String){
-        /*
-        var alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)d
-        */
         let alertView = UIAlertView(title: alertTitle, message: alertMessage, delegate: nil, cancelButtonTitle: "OK")
         alertView.show()
     }
@@ -47,39 +46,59 @@ class TodaysPicsViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
 
+//        let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
+//        challenge = todaysChallenge
+//        let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
+//        
+//        challengeLabel.text = todaysChallengeString
+//        
+//        let todaysPostsQuery = Post.query()
+//        
+//        ParseHelper.todaysPosts(todaysChallenge, todaysPostsQuery: todaysPostsQuery)
+//        
+//        todaysPostsQuery!.findObjectsInBackgroundWithBlock {
+//            (result: [AnyObject]?, error: NSError?) -> Void in
+//            // 8
+//            self.posts = result as? [Post] ?? []
+//            
+//            for post in self.posts {
+//                // 2
+//                let data = post.imageFile?.getData()
+//                // 3
+//                post.image.value = UIImage(data: data!, scale:1.0)
+//            }
+
+            // 9
+//            self.tableView.reloadData()
+//            
+//        }
+//
+//        ParseHelper.timelineRequestforCurrentUser { (results: [AnyObject]?, error: NSError?) -> Void in
+//            self.posts = results as? [Post] ?? []
+//            
+//            self.tableView.reloadData()
+//        }
+        
         let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
-        challenge = todaysChallenge
+        
+        if let challenge = todaysChallenge
+        {
+            self.challenge = todaysChallenge
+        }
         let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
         
         challengeLabel.text = todaysChallengeString
         
-        let todaysPostsQuery = Post.query()
-        
-        ParseHelper.todaysPosts(todaysChallenge, todaysPostsQuery: todaysPostsQuery)
-        
-        todaysPostsQuery!.findObjectsInBackgroundWithBlock {
-            (result: [AnyObject]?, error: NSError?) -> Void in
-            // 8
-            self.posts = result as? [Post] ?? []
-            
-            for post in self.posts {
-                // 2
-                let data = post.imageFile?.getData()
-                // 3
-                post.image = UIImage(data: data!, scale:1.0)
+        ParseHelper.timelineRequestforCurrentUser { (results: [AnyObject]?, error: NSError?) -> Void in
+            if let error = error
+            {
             }
-
-            // 9
-            self.tableView.reloadData()
-            
-        }
-        
-        if PFUser.currentUser()?.username == "LaIkHtEwArIiSaNaDmIn"
-        {
-            winnerCheckButton.hidden = false
-        }
-        else {
-            winnerCheckButton.hidden = true
+            else
+            {
+                self.posts = results as? [Post] ?? []
+                
+                self.tableView.reloadData()
+            }
         }
     
     }
@@ -87,27 +106,24 @@ class TodaysPicsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
+        
+        
     }
     
-    @IBAction func checkWinnerButton(sender: AnyObject) {
-        println ("checkwinnerbutton tapped")
-        
-        let winner = ParseHelper.getWinner("NSY90CL4ca")
-        winner.save()
-        println("finished saving")
-    }
     
     func takePhoto() {
         // instantiate photo taking class, provide callback for when photo  is selected
         if (UIImagePickerController.isCameraDeviceAvailable(.Rear))
         {
             pic = Picture(viewController: self.tabBarController!, callback: { (image: UIImage?) in
-                let imageData = UIImageJPEGRepresentation(image, 0.8)
+                let imageData = UIImageJPEGRepresentation(image, 0.5)
                 let imageFile = PFFile(data: imageData)
                 imageFile.saveInBackgroundWithBlock(nil)
             
                 let post = Post()
-                post.image = image
+                post.image.value = image!
                 let pfPost = post as PFObject
                 ParseHelper.addChallengeToPost(pfPost, challenge: self.challenge)
                 post.uploadPost()
@@ -159,8 +175,14 @@ extension TodaysPicsViewController: UITableViewDataSource {
         // 2
         let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostTableViewCell
         
-        cell.postImageView.image = posts[indexPath.row].image
-        cell.post = posts[indexPath.row]
+        let post = posts[indexPath.row]
+        
+        post.downloadImage()
+        
+        cell.post = post
+        
+        //cell.postImageView.image = posts[indexPath.row].image.value
+        //cell.post = posts[indexPath.row]
         
         return cell
     }

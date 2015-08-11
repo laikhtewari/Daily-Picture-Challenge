@@ -13,39 +13,60 @@ class WinnerViewController: UIViewController {
 
     @IBOutlet weak var winnerTableView: UITableView!
     
-    var winners: [Winner] = []
+    var winnerPosts: [Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.winnerTableView.dataSource = self
+        
+        ParseHelper.winnerPostsRequest { (results: [AnyObject]?, error: NSError?) -> Void in
+            self.winnerPosts = results as? [Post] ?? []
+            
+            self.winnerTableView.reloadData()
+            
+            println("NUMBER OF WINNERS: \(self.winnerPosts.count)")
+        }
 
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
         
-        let postQuery = Post.query()
-        postQuery?.whereKey("winner", equalTo: true)
+//        postQuery!.findObjectsInBackgroundWithBlock {
+//            (result: [AnyObject]?, error: NSError?) -> Void in
+//            // 8
+//            self.winnerPosts = result as? [Post] ?? []
+//            println("NUMBER OF OBJECTS: \(self.winnerPosts.count)")
+//            for post in self.winnerPosts {
+//                // 2
+//                let data = post.imageFile?.getData()
+//                // 3
+//                post.image.value = UIImage(data: data!, scale:0.8)
+//            }
+//            
+//            self.winnerTableView.reloadData()
+//        }
         
         
-        let winnersQuery = Winner.query()
-        
-        winnersQuery!.findObjectsInBackgroundWithBlock {
-            (results: [AnyObject]?, error: NSError?) -> Void in
-            
-            self.winners = results as? [Winner] ?? []
-            
-            for winner in self.winners
-            {
-                let data = winner.post.imageFile?.getData()
-                
-                winner.post.image = UIImage(data: data!, scale: 1.0)
-            }
-            
-            winnersQuery?.orderByDescending("createdAt")
-            
-            self.winnerTableView.reloadData()
-        }
+//        let winnersQuery = Winner.query()
+//        
+//        winnersQuery!.findObjectsInBackgroundWithBlock {
+//            (results: [AnyObject]?, error: NSError?) -> Void in
+//            
+//            self.winners = results as? [Winner] ?? []
+//            
+//            for winner in self.winners
+//            {
+//                let data = winner.post.imageFile?.getData()
+//                
+//                winner.post.image = UIImage(data: data!, scale: 1.0)
+//            }
+//            
+//            winnersQuery?.orderByDescending("createdAt")
+//            
+//            self.winnerTableView.reloadData()
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,17 +89,23 @@ class WinnerViewController: UIViewController {
 
 extension WinnerViewController: UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 1
-        return winners.count
+        return winnerPosts.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // 2
-        let cell = tableView.dequeueReusableCellWithIdentifier("WinnerCell") as! WinnerTableViewCell
+        let cell = winnerTableView.dequeueReusableCellWithIdentifier("WinnerCell") as! WinnerTableViewCell
         
-        cell.winnerImageView.image = winners[indexPath.row].post.image
-        cell.winner = winners[indexPath.row]
+        let post = winnerPosts[indexPath.row]
+        
+        post.downloadImage()
+        
+        cell.winnerPost = post
+        
+        cell.setChallenge()
+        //cell.winnerImageView.image = winnerPosts[indexPath.row].image
         
         return cell
     }

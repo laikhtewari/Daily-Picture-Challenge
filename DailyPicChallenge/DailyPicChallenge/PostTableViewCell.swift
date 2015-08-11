@@ -8,12 +8,28 @@
 
 import UIKit
 import Parse
-//import Bond
+import Bond
 
 class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var postImageView: UIImageView!
-    var post: Post?
+    var post: Post? {
+        didSet {
+            // 1
+            
+            if let oldValue = oldValue where oldValue != post {
+                postImageView.designatedBond.unbindAll()
+                // 3
+                oldValue.image.value = nil
+            }
+            
+            if let post = post {
+                //2
+                // bind the image of the post to the 'postImage' view
+                post.image ->> postImageView
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
