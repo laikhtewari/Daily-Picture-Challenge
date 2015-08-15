@@ -15,6 +15,9 @@ class TodaysPicsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var challengeLabel: UILabel!
     
+    
+    var flagSelected = false
+    
     var memoryWarningCount = 0
     
     var challenge: PFObject!
@@ -29,10 +32,6 @@ class TodaysPicsViewController: UIViewController {
         self.tabBarController?.delegate = self
         self.tableView.dataSource = self
         
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     static func displayAlert(alertTitle: String, alertMessage: String){
@@ -43,55 +42,43 @@ class TodaysPicsViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
+    @IBAction func logoutTapped(sender: AnyObject) {
+        PFUser.logOutInBackgroundWithBlock { (error: NSError?) -> Void in
+            if let error = error
+            {
+                let alertView = UIAlertView(title: "Error", message: "Unable to logout", delegate: nil, cancelButtonTitle: "OK")
+            }
+            else
+            {
+                self.performSegueWithIdentifier("LoggedOut", sender: self)
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.removeObjectForKey("username")
+                defaults.removeObjectForKey("password")
+                println("\(PFUser.currentUser())")
+            }
+        }
+    }
     
     override func viewDidAppear(animated: Bool) {
-
-//        let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
-//        challenge = todaysChallenge
-//        let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
-//        
-//        challengeLabel.text = todaysChallengeString
-//        
-//        let todaysPostsQuery = Post.query()
-//        
-//        ParseHelper.todaysPosts(todaysChallenge, todaysPostsQuery: todaysPostsQuery)
-//        
-//        todaysPostsQuery!.findObjectsInBackgroundWithBlock {
-//            (result: [AnyObject]?, error: NSError?) -> Void in
-//            // 8
-//            self.posts = result as? [Post] ?? []
-//            
-//            for post in self.posts {
-//                // 2
-//                let data = post.imageFile?.getData()
-//                // 3
-//                post.image.value = UIImage(data: data!, scale:1.0)
-//            }
-
-            // 9
-//            self.tableView.reloadData()
-//            
-//        }
-//
-//        ParseHelper.timelineRequestforCurrentUser { (results: [AnyObject]?, error: NSError?) -> Void in
-//            self.posts = results as? [Post] ?? []
-//            
-//            self.tableView.reloadData()
-//        }
+        super.viewDidAppear(true)
         
-        let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
+        //running on main thread :(
         
-        if let challenge = todaysChallenge
+        let challengeDictionary = ParseHelper.todaysChallenge()
+        let challengeObject = challengeDictionary.challengeObject
+        let challengeString = challengeDictionary.challengeString
+        
+        if let challenge = challengeObject
         {
-            self.challenge = todaysChallenge
+            self.challenge = challengeObject
         }
-        let todaysChallengeString = ParseHelper.todaysChallenge().challengeString
         
-        challengeLabel.text = todaysChallengeString
+        challengeLabel.text = challengeString
         
         ParseHelper.timelineRequestforCurrentUser { (results: [AnyObject]?, error: NSError?) -> Void in
             if let error = error
             {
+                println("error querying challenges")
             }
             else
             {
@@ -100,16 +87,11 @@ class TodaysPicsViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }
-    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
-        
-        
-        
     }
     
     
@@ -168,6 +150,7 @@ extension TodaysPicsViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 1
+        println("\(posts.count)")
         return posts.count
     }
     

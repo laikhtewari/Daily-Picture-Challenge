@@ -107,6 +107,9 @@ extension WinnerViewController: UITableViewDataSource {
         cell.setChallenge()
         //cell.winnerImageView.image = winnerPosts[indexPath.row].image
         
+        cell.challengeLabel.text = "Noble Statues"
+        cell.userLabel.text = "andrewJames123"
+        
         return cell
     }
 }

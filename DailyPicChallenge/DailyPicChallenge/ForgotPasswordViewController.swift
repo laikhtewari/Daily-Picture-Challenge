@@ -17,7 +17,8 @@ class ForgotPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.checkExternalTaps()
         // Do any additional setup after loading the view.
     }
 
@@ -74,5 +75,15 @@ class ForgotPasswordViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func checkExternalTaps(){
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: "didTapView")
+        self.view.addGestureRecognizer(tapRecognizer)
+    }
+    
+    func didTapView(){
+        self.view.endEditing(true)
+    }
 
 }

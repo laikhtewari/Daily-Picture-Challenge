@@ -16,7 +16,6 @@ class Post: PFObject, PFSubclassing {
     @NSManaged var user: PFUser?
     @NSManaged var flag: FlaggedContent?
     @NSManaged var totalVoteValue: Int
-    @NSManaged var challenge: Challenge?
     
     var flagged = false
     

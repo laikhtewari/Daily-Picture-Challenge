@@ -1,3 +1,5 @@
+
+
 //
 //  AppDelegate.swift
 //  DailyPicChallenge
@@ -26,6 +28,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     Parse.setApplicationId("XNC5GfNCY1zmSZb48T246rZ85qR4gyb14nvZrRTm", clientKey: "ndNDzJSDeQRKvYcnicCbU8f1jIGEc15uD5TXxWpP")
         
         //PFUser.logInWithUsername("LaIkHtEwArIiSaNaDmIn", password: "ThIsIsMyPaSsWoRd2000")
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let username = defaults.objectForKey("username") as? String
+        {
+//            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//            let navigationController = storyBoard.instantiateViewControllerWithIdentifier("TabBarController") as! UIViewController
+//            self.window?.rootViewController?.presentViewController(navigationController, animated: true, completion: nil)
+            if let password = defaults.objectForKey("password") as? String
+            {
+                PFUser.logInWithUsernameInBackground(username, password: password, block: { (user: PFUser?, error: NSError?) -> Void in
+                    if let error = error
+                    {
+                        PFUser.logInWithUsernameInBackground(username, password: password, block: { (user2: PFUser?, error2: NSError?) -> Void in
+                            if let error2 = error2
+                            {
+                                
+                            }
+                            else{
+                                println("logged in")
+                            }
+                        })
+                    }
+                    else
+                    {
+                        println("logged in on first try")
+                    }
+                })
+            }
+        }
         
         let acl = PFACL()
         acl.setPublicReadAccess(true)

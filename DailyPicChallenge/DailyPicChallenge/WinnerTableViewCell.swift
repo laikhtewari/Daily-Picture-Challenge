@@ -27,7 +27,6 @@ class WinnerTableViewCell: UITableViewCell {
         }
     }
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,10 +38,10 @@ class WinnerTableViewCell: UITableViewCell {
         
         //let challengeString = ParseHelper.getInfoWithPost(winnerPost).challenge
         
-        let challengeString = self.winnerPost.challenge?.challenge
-        let username = self.winnerPost.user?.username
-        self.challengeLabel.text = challengeString
-        self.userLabel.text = username
+//        let challengeString = self.winnerPost.challenge?.challenge
+//        let username = self.winnerPost.user?.username
+//        self.challengeLabel.text = challengeString
+//        self.userLabel.text = username
         
     }
 

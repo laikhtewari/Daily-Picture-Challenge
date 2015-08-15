@@ -17,13 +17,17 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPasswordField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var termsCheckButton: UIButton!
+    
+    var agreedToTerms = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
         self.checkExternalTaps()
         
-        activityIndicator.hidden = true
+        activityIndicator.hidesWhenStopped = true
         
         // Do any additional setup after loading the view.
     }
@@ -33,75 +37,103 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func termsCheckTapped(sender: AnyObject) {
+        agreedToTerms = !agreedToTerms
+        termsCheckButton.selected = agreedToTerms
+    }
+    
     @IBAction func getStartedTapped(sender: AnyObject) {
-        activityIndicator.hidden = false
         activityIndicator.startAnimating()
-        let userQuery = PFUser.query()
-        userQuery?.whereKey("username", equalTo: usernameField.text)
-        userQuery?.findObjectsInBackgroundWithBlock {
-            (results:[AnyObject]?, error: NSError?) -> Void in
-            if self.usernameField.text != ""
-            {
-                if results?.count == 0
+        if agreedToTerms
+        {
+            let userQuery = PFUser.query()
+            userQuery?.whereKey("username", equalTo: usernameField.text)
+            userQuery?.findObjectsInBackgroundWithBlock {
+                (results:[AnyObject]?, error: NSError?) -> Void in
+                if self.usernameField.text != ""
                 {
-                    if self.emailField.text != ""
+                    if results?.count == 0
                     {
-                        if self.passwordField.text == self.confirmPasswordField.text
+                        if self.emailField.text != ""
                         {
-                            let user = PFUser()
-                            user.username = self.usernameField.text
-                            user.password = self.passwordField.text
-                            user.email = self.emailField.text
-                        
-                            user.signUpInBackgroundWithBlock({ (success: Bool, error: NSError?) -> Void in
+                            if self.passwordField.text == self.confirmPasswordField.text
+                            {
+                                let user = PFUser()
+                                user.username = self.usernameField.text
+                                user.password = self.passwordField.text
+                                user.email = self.emailField.text
                             
-                                if let error = error
-                                {
-                                    let alertView = UIAlertView(title: "Error", message: "Unable to sign up", delegate: nil, cancelButtonTitle: "OK")
-                                    alertView.show()
-                                }
-                                else
-                                {
-                                    println("done saving")
-                                    PFUser.logInWithUsernameInBackground(self.usernameField.text, password: self.passwordField.text, block: { (user: PFUser?, error: NSError?) -> Void in
-                                        if let error = error
-                                        {
-                                            let alertView = UIAlertView(title: "Error", message: "Unsuccessful login", delegate: nil, cancelButtonTitle: "OK")
-                                            alertView.show()
-                                        }
-                                        else
-                                        {
-                                            println("logged in successfully")
-                                            self.activityIndicator.stopAnimating()
-                                            self.performSegueWithIdentifier("signedUp", sender: self)
-                                        }
-                                    })
-                                }
-                            })
+                                user.signUpInBackgroundWithBlock({ (success: Bool, error: NSError?) -> Void in
+                                
+                                    if let error = error
+                                    {
+                                        let alertView = UIAlertView(title: "Error", message: "Unable to sign up", delegate: nil, cancelButtonTitle: "OK")
+                                        alertView.show()
+                                        
+                                        self.activityIndicator.stopAnimating()
+                                    }
+                                    else
+                                    {
+                                        println("done saving")
+                                        PFUser.logInWithUsernameInBackground(self.usernameField.text, password: self.passwordField.text, block: { (user: PFUser?, error: NSError?) -> Void in
+                                            if let error = error
+                                            {
+                                                let alertView = UIAlertView(title: "Error", message: "Unsuccessful login", delegate: nil, cancelButtonTitle: "OK")
+                                                alertView.show()
+                                                self.activityIndicator.stopAnimating()
+                                            }
+                                            else
+                                            {
+                                                println("logged in successfully")
+                                                self.activityIndicator.stopAnimating()
+                                                self.performSegueWithIdentifier("signedUp", sender: self)
+                                            }
+                                        })
+                                    }
+                                })
+                            }
+                            else
+                            {
+                                let alertView = UIAlertView(title: "Error", message: "Passwords do not match", delegate: nil, cancelButtonTitle: "OK")
+                                alertView.show()
+                                
+                                self.activityIndicator.stopAnimating()
+                            }
                         }
                         else
                         {
-                            let alertView = UIAlertView(title: "Error", message: "Passwords do not match", delegate: nil, cancelButtonTitle: "OK")
+                            let alertView = UIAlertView(title: "Error", message: "Invalid email", delegate: nil, cancelButtonTitle: "OK")
                             alertView.show()
+                            
+                            self.activityIndicator.stopAnimating()
                         }
                     }
                     else
                     {
-                        let alertView = UIAlertView(title: "Error", message: "Invalid email", delegate: nil, cancelButtonTitle: "OK")
+                        let alertView = UIAlertView(title: "Error", message: "Username already taken", delegate: nil, cancelButtonTitle: "OK")
                         alertView.show()
+                        
+                         self.activityIndicator.stopAnimating()
                     }
                 }
                 else
                 {
-                    let alertView = UIAlertView(title: "Error", message: "Username already taken", delegate: nil, cancelButtonTitle: "OK")
+                    let alertView = UIAlertView(title: "Error", message: "Please enter a username", delegate: nil, cancelButtonTitle: "OK")
                     alertView.show()
+                    
+                     self.activityIndicator.stopAnimating()
                 }
             }
-            else
-            {
-                let alertView = UIAlertView(title: "Error", message: "Please enter a username", delegate: nil, cancelButtonTitle: "OK")
-                alertView.show()
-            }
+        }
+        else {
+            let alertView = UIAlertView(title: "Error", message: "Please agree to the terms and conditions", delegate: nil, cancelButtonTitle: "OK")
+            alertView.show()
+            
+             self.activityIndicator.stopAnimating()
         }
     }
     func keyboardWillShow(sender: NSNotification) {

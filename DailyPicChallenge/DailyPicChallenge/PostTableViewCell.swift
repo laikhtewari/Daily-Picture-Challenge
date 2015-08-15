@@ -13,6 +13,8 @@ import Bond
 class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var postImageView: UIImageView!
+    
+    var flagSelected = false
     var post: Post? {
         didSet {
             // 1
@@ -43,6 +45,8 @@ class PostTableViewCell: UITableViewCell {
     }
     
     @IBAction func flagButtonTapped(sender: UIButton) {
+        
+        sender.selected = !flagSelected
        
         println ("flagbutton tapped")
         
@@ -75,7 +79,9 @@ class PostTableViewCell: UITableViewCell {
         }
     }
     
-    @IBAction func voteButtonTapped(sender: AnyObject) {
+    @IBAction func voteButtonTapped(sender: UIButton) {
+        sender.selected = !sender.selected
+        
         println("Vote button tapped")
         ParseHelper.vote(self.post!)
     }

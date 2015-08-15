@@ -12,10 +12,35 @@ import Mixpanel
 
 class ParseHelper {
     
+//
+//    static func todaysChallenge ( timeline: TodaysPicsViewController ) /*-> ( challengeString: String?, challengeObject: PFObject?)*/
+//    {
+//        let challengeQuery = Challenge.query()
+//        var todaysChallenge: PFObject!
+//        var todaysChallengeString: String!
+//        let currentDate = NSDate()
+//        challengeQuery?.whereKey("endDate", greaterThanOrEqualTo: currentDate)
+//        challengeQuery?.whereKey("startDate", lessThanOrEqualTo: currentDate)
+//        challengeQuery?.getFirstObjectInBackgroundWithBlock({ (result: PFObject?, error: NSError?) -> Void in
+//            if let error = error
+//            {
+//                let alertView = UIAlertView(title: "Error", message: "Unable to retrieve today's challenge", delegate: nil, cancelButtonTitle: "OK")
+//                alertView.show()
+//            }
+//            else
+//            {
+//                todaysChallenge = result
+//                todaysChallengeString = todaysChallenge["challenge"]
+//                timeline.challenge = todaysChallenge
+//                timeline.challengeLabel
+//            }
+//        })
+    
     static func todaysChallenge () -> ( challengeString: String?, challengeObject: PFObject?)
     {
         let challengeQuery = Challenge.query()
         let currentDate = NSDate()
+        println("\(currentDate)")
         challengeQuery?.whereKey("endDate", greaterThanOrEqualTo: currentDate)
         challengeQuery?.whereKey("startDate", lessThanOrEqualTo: currentDate)
         let todaysChallenge = challengeQuery?.getFirstObject()
@@ -51,12 +76,12 @@ class ParseHelper {
         }
     }
     
-    static func addChallengeToPost ( post: Post, challenge: PFObject )
-    {
-        let localChallenge = challenge as! Challenge
-        post.challenge = localChallenge
-        
-    }
+//    static func addChallengeToPost ( post: Post, challenge: PFObject )
+//    {
+//        let localChallenge = challenge as! Challenge
+//        post.challenge = localChallenge
+//        
+//    }
     
     static func addChallengeToPost( post: PFObject, challenge: PFObject)
     {
@@ -163,8 +188,6 @@ class ParseHelper {
         
         
         let todaysChallenge = ParseHelper.todaysChallenge().challengeObject
-        let challenge = todaysChallenge
-        
         let todaysPostsQuery = Post.query()
         
         ParseHelper.todaysPosts(todaysChallenge, todaysPostsQuery: todaysPostsQuery)

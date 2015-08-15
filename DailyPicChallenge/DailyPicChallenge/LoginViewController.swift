@@ -24,13 +24,20 @@ class LoginViewController: UIViewController {
         self.checkExternalTaps()
         
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.hidden = true
         
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
         if let user = PFUser.currentUser()
         {
             self.performSegueWithIdentifier("loggedIn", sender: self)
         }
-        // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.frame.origin.y = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,13 +46,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func getStartedButtonTapped (sender: AnyObject) {
-        activityIndicator.hidden = false
         activityIndicator.startAnimating()
         PFUser.logInWithUsernameInBackground(usernameField.text, password: passwordField.text) { (user: PFUser?, error: NSError?) -> Void in
             self.activityIndicator.stopAnimating()
             if let user = user
             {
-                println("\(self.passwordField.text)")
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject( self.usernameField.text, forKey: "username")
+                defaults.setObject(self.passwordField.text, forKey: "password")
                 self.performSegueWithIdentifier("loggedIn", sender: self.getStartedButton)
             }
             else if let error = error
@@ -63,10 +71,11 @@ class LoginViewController: UIViewController {
             }
         })
     }
-    
     func keyboardWillHide(sender: NSNotification) {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
-            self.view.frame.origin.y += 150
+            if (self.view.frame.origin.y < 150) {
+                self.view.frame.origin.y += 150
+            }
         })
     }
     

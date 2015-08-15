@@ -11,13 +11,14 @@
 		CB23306F1B62DFBF00C99A75 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23306E1B62DFBF00C99A75 /* Challenge.swift */; };
 		CB2330711B63599D00C99A75 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330701B63599D00C99A75 /* PostTableViewCell.swift */; };
 		CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2330721B635F1E00C99A75 /* ParseHelper.swift */; };
+		CB250A181B7BCBA3008CDEBB /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB250A171B7BCBA3008CDEBB /* TermsViewController.swift */; };
 		CB433E9E1B66F76A007A124C /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB433E9D1B66F76A007A124C /* Vote.swift */; };
 		CB445AE71B7183B5007A5F68 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB445AE61B7183B5007A5F68 /* WinnerViewController.swift */; };
 		CB445AE91B718654007A5F68 /* WinnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB445AE81B718654007A5F68 /* WinnerTableViewCell.swift */; };
+		CB4E06021B7D205300B55A54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4E06011B7D205300B55A54 /* Images.xcassets */; };
 		CB6FCAB71B6BF6F900E2724B /* FlaggedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FCAB61B6BF6F900E2724B /* FlaggedContent.swift */; };
 		CB7678E61B5D93BF00E91F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */; };
 		CB7678EB1B5D93BF00E91F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7678E91B5D93BF00E91F14 /* Main.storyboard */; };
-		CB7678ED1B5D93BF00E91F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7678EC1B5D93BF00E91F14 /* Images.xcassets */; };
 		CB7678F01B5D93BF00E91F14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7678EE1B5D93BF00E91F14 /* LaunchScreen.xib */; };
 		CB7678FC1B5D93BF00E91F14 /* DailyPicChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7678FB1B5D93BF00E91F14 /* DailyPicChallengeTests.swift */; };
 		CB7679151B5D940A00E91F14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7679141B5D940A00E91F14 /* AudioToolbox.framework */; };
@@ -57,15 +58,16 @@
 		CB23306E1B62DFBF00C99A75 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		CB2330701B63599D00C99A75 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		CB2330721B635F1E00C99A75 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		CB250A171B7BCBA3008CDEBB /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		CB433E9D1B66F76A007A124C /* Vote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		CB445AE61B7183B5007A5F68 /* WinnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
 		CB445AE81B718654007A5F68 /* WinnerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnerTableViewCell.swift; sourceTree = "<group>"; };
+		CB4E06011B7D205300B55A54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB6FCAB61B6BF6F900E2724B /* FlaggedContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlaggedContent.swift; sourceTree = "<group>"; };
 		CB7678E01B5D93BF00E91F14 /* DailyPicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7678E41B5D93BF00E91F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7678EA1B5D93BF00E91F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB7678EC1B5D93BF00E91F14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB7678EF1B5D93BF00E91F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CB7678F51B5D93BF00E91F14 /* DailyPicChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyPicChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7678FA1B5D93BF00E91F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,12 +170,13 @@
 		CB7678E21B5D93BF00E91F14 /* DailyPicChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				CB4E06011B7D205300B55A54 /* Images.xcassets */,
 				CB7678E51B5D93BF00E91F14 /* AppDelegate.swift */,
 				CB7678E91B5D93BF00E91F14 /* Main.storyboard */,
-				CB7678EC1B5D93BF00E91F14 /* Images.xcassets */,
 				CB7678EE1B5D93BF00E91F14 /* LaunchScreen.xib */,
 				CB7678E31B5D93BF00E91F14 /* Supporting Files */,
 				CB76792A1B5D95F800E91F14 /* TodaysPicsViewController.swift */,
+				CB250A171B7BCBA3008CDEBB /* TermsViewController.swift */,
 				CB445AE61B7183B5007A5F68 /* WinnerViewController.swift */,
 				CBD174291B73C08000E7C25A /* LoginViewController.swift */,
 				CBD1742B1B73C09700E7C25A /* SignUpViewController.swift */,
@@ -309,9 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4E06021B7D205300B55A54 /* Images.xcassets in Resources */,
 				CB7678EB1B5D93BF00E91F14 /* Main.storyboard in Resources */,
 				CB7678F01B5D93BF00E91F14 /* LaunchScreen.xib in Resources */,
-				CB7678ED1B5D93BF00E91F14 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +394,7 @@
 				CB6FCAB71B6BF6F900E2724B /* FlaggedContent.swift in Sources */,
 				CB445AE91B718654007A5F68 /* WinnerTableViewCell.swift in Sources */,
 				CB2330731B635F1E00C99A75 /* ParseHelper.swift in Sources */,
+				CB250A181B7BCBA3008CDEBB /* TermsViewController.swift in Sources */,
 				CB445AE71B7183B5007A5F68 /* WinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +532,7 @@
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -538,7 +542,8 @@
 				INFOPLIST_FILE = DailyPicChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "49361c4e-8b19-4d08-9d9c-d48cb03c024f";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -552,7 +557,7 @@
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -562,7 +567,8 @@
 				INFOPLIST_FILE = DailyPicChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "49361c4e-8b19-4d08-9d9c-d48cb03c024f";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
