@@ -42,22 +42,7 @@ class TodaysPicsViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-    @IBAction func logoutTapped(sender: AnyObject) {
-        PFUser.logOutInBackgroundWithBlock { (error: NSError?) -> Void in
-            if let error = error
-            {
-                let alertView = UIAlertView(title: "Error", message: "Unable to logout", delegate: nil, cancelButtonTitle: "OK")
-            }
-            else
-            {
-                self.performSegueWithIdentifier("LoggedOut", sender: self)
-                let defaults = NSUserDefaults.standardUserDefaults()
-                defaults.removeObjectForKey("username")
-                defaults.removeObjectForKey("password")
-                println("\(PFUser.currentUser())")
-            }
-        }
-    }
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)

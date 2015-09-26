@@ -158,20 +158,6 @@
                                         <color key="textColor" red="0.99215686270000003" green="0.86274509799999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-x1-YjF">
-                                        <rect key="frame" x="8" y="8" width="56" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="56" id="g7M-hI-bRG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <state key="normal" title="Logout">
-                                            <color key="titleColor" red="0.99215686270000003" green="0.86274509799999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="logoutTapped:" destination="NHS-wd-epi" eventType="touchUpInside" id="wTi-it-ajC"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -180,14 +166,11 @@
                                     <constraint firstItem="Gx2-Lb-7ca" firstAttribute="top" secondItem="cEo-Hb-C7z" secondAttribute="top" constant="25" id="X69-fi-Z6O"/>
                                     <constraint firstItem="Gx2-Lb-7ca" firstAttribute="top" secondItem="cEo-Hb-C7z" secondAttribute="top" constant="20" id="dZI-Ws-OfB"/>
                                     <constraint firstAttribute="centerY" secondItem="z1l-yZ-ZxN" secondAttribute="centerY" id="e6M-QG-a4g"/>
-                                    <constraint firstItem="qbl-x1-YjF" firstAttribute="leading" secondItem="cEo-Hb-C7z" secondAttribute="leadingMargin" id="ghO-Ju-6XX"/>
                                     <constraint firstItem="z1l-yZ-ZxN" firstAttribute="top" secondItem="Gx2-Lb-7ca" secondAttribute="bottom" constant="2" id="iiH-c0-pVl"/>
                                     <constraint firstAttribute="centerX" secondItem="z1l-yZ-ZxN" secondAttribute="centerX" id="j6w-7p-7b8"/>
                                     <constraint firstAttribute="centerX" secondItem="Gx2-Lb-7ca" secondAttribute="centerX" constant="-6" id="qyE-ec-2QM"/>
                                     <constraint firstItem="Gx2-Lb-7ca" firstAttribute="top" secondItem="cEo-Hb-C7z" secondAttribute="top" constant="10" id="sBG-Ye-ba8"/>
-                                    <constraint firstAttribute="bottom" secondItem="qbl-x1-YjF" secondAttribute="bottom" constant="36" id="toL-hb-vat"/>
                                     <constraint firstAttribute="centerX" secondItem="z1l-yZ-ZxN" secondAttribute="centerX" constant="22" id="vdg-Lh-2gP"/>
-                                    <constraint firstItem="qbl-x1-YjF" firstAttribute="top" secondItem="cEo-Hb-C7z" secondAttribute="topMargin" id="wzz-cY-hAF"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -223,7 +206,6 @@
                     <connections>
                         <outlet property="challengeLabel" destination="z1l-yZ-ZxN" id="Fe3-9F-zhK"/>
                         <outlet property="tableView" destination="9zl-4a-uip" id="GE8-cj-hmH"/>
-                        <segue destination="hhQ-Tg-X2Z" kind="show" identifier="LoggedOut" id="ROt-7f-fA9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i55-Sm-1m5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,21 +248,6 @@
                                     <action selector="enterTapped:" destination="1Fe-FX-KYj" eventType="touchUpInside" id="0eF-sP-HaF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="PRz-hI-EDU">
-                                <rect key="frame" x="237" y="318" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="DSo-Be-lIY"/>
-                                    <constraint firstAttribute="width" constant="189" id="f8B-Tf-3Bk"/>
-                                    <constraint firstAttribute="height" constant="189" id="mgf-Sw-Hh5"/>
-                                    <constraint firstAttribute="width" secondItem="PRz-hI-EDU" secondAttribute="height" multiplier="1:1" id="ttV-Hx-6It"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="f8B-Tf-3Bk"/>
-                                        <exclude reference="mgf-Sw-Hh5"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3up-SP-bER">
                                 <rect key="frame" x="16" y="20" width="36" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -301,16 +268,8 @@
                             <constraint firstItem="SKb-Gv-2Nl" firstAttribute="top" secondItem="eJQ-Zh-6iX" secondAttribute="bottom" constant="8" symbolic="YES" id="RLu-ht-ehW"/>
                             <constraint firstItem="SKb-Gv-2Nl" firstAttribute="centerX" secondItem="eJQ-Zh-6iX" secondAttribute="centerX" id="T2z-Zr-2Ep"/>
                             <constraint firstItem="3up-SP-bER" firstAttribute="leading" secondItem="wqG-V7-Ipa" secondAttribute="leadingMargin" id="Uoz-S6-uUz"/>
-                            <constraint firstAttribute="centerX" secondItem="PRz-hI-EDU" secondAttribute="centerX" id="dYK-iZ-K5J"/>
-                            <constraint firstAttribute="centerY" secondItem="PRz-hI-EDU" secondAttribute="centerY" id="fi1-qc-v7l"/>
                             <constraint firstItem="SKb-Gv-2Nl" firstAttribute="centerX" secondItem="wqG-V7-Ipa" secondAttribute="centerX" id="hot-hz-vAa"/>
-                            <constraint firstItem="PRz-hI-EDU" firstAttribute="width" secondItem="PRz-hI-EDU" secondAttribute="height" multiplier="1:1" id="txa-lj-C67"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="txa-lj-C67"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="eJQ-Zh-6iX" id="v51-OW-SFz"/>
@@ -766,6 +725,69 @@ Do not post photos of threats of physical harm as well as threats of theft, vand
             </objects>
             <point key="canvasLocation" x="-2750" y="2205"/>
         </scene>
+        <!--Competition Rules View Controller-->
+        <scene sceneID="wEa-6T-01V">
+            <objects>
+                <viewController id="SkJ-9s-wWP" customClass="CompetitionRulesViewController" customModule="DailyPicChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6r3-kd-IEY"/>
+                        <viewControllerLayoutGuide type="bottom" id="30X-wu-YFR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZnU-HE-hb7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUo-8K-wpy">
+                                <rect key="frame" x="16" y="95" width="568" height="489"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="548" id="07b-5u-6aL"/>
+                                </constraints>
+                                <string key="text">Posts must be submitted by 11:59 UTC to be considered eligible for that day’s challenge
+
+Posts must not violate our guidelines in order for them to be eligible
+
+All contests and prizes are in no way affiliated with Apple</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="07b-5u-6aL"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Competition Rules" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSE-WC-aeh">
+                                <rect key="frame" x="229" y="52" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk2-Bf-IKI">
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="9id-WT-Q5V" eventType="touchUpInside" id="YfE-Nj-Pw0"/>
+                                    <action selector="dismiss:" destination="SkJ-9s-wWP" eventType="touchUpInside" id="fzx-EA-GwP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DUo-8K-wpy" firstAttribute="top" secondItem="6r3-kd-IEY" secondAttribute="bottom" constant="75" id="EcA-xO-1aE"/>
+                            <constraint firstItem="nSE-WC-aeh" firstAttribute="centerX" secondItem="DUo-8K-wpy" secondAttribute="centerX" id="H5s-Mm-kQ2"/>
+                            <constraint firstItem="DUo-8K-wpy" firstAttribute="top" secondItem="nSE-WC-aeh" secondAttribute="bottom" constant="22" id="VMj-X6-F9B"/>
+                            <constraint firstItem="DUo-8K-wpy" firstAttribute="trailing" secondItem="ZnU-HE-hb7" secondAttribute="trailingMargin" id="cZe-8U-bYW"/>
+                            <constraint firstItem="DUo-8K-wpy" firstAttribute="leading" secondItem="ZnU-HE-hb7" secondAttribute="leadingMargin" id="s1k-RU-sVN"/>
+                            <constraint firstItem="30X-wu-YFR" firstAttribute="top" secondItem="DUo-8K-wpy" secondAttribute="bottom" constant="16" id="sAL-sL-Yru"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phy-UX-dlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="-2942"/>
+        </scene>
         <!--Winner View Controller-->
         <scene sceneID="nk9-zC-vJH">
             <objects>
@@ -852,12 +874,34 @@ Do not post photos of threats of physical harm as well as threats of theft, vand
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmD-Mg-2VH">
+                                <rect key="frame" x="16" y="513" width="49" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="ZEz-I0-LKc" eventType="touchUpInside" id="GwX-Tg-Jra"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6x-KR-Kmv">
+                                <rect key="frame" x="461" y="513" width="123" height="30"/>
+                                <state key="normal" title="Competiton Rules">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SkJ-9s-wWP" kind="presentation" id="Hfp-xV-MyB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rmD-Mg-2VH" firstAttribute="baseline" secondItem="g6x-KR-Kmv" secondAttribute="baseline" id="7zu-ZR-yLe"/>
                             <constraint firstItem="Dys-2V-osF" firstAttribute="leading" secondItem="5R1-S7-FiV" secondAttribute="leading" id="EoS-Um-rLF"/>
+                            <constraint firstItem="rmD-Mg-2VH" firstAttribute="leading" secondItem="1ao-YT-idV" secondAttribute="leadingMargin" id="ITs-xI-s4U"/>
+                            <constraint firstItem="g6x-KR-Kmv" firstAttribute="trailing" secondItem="1ao-YT-idV" secondAttribute="trailingMargin" id="OXg-yd-XRL"/>
                             <constraint firstItem="Dys-2V-osF" firstAttribute="top" secondItem="1ao-YT-idV" secondAttribute="top" id="X1g-4o-Lyy"/>
                             <constraint firstItem="5R1-S7-FiV" firstAttribute="top" secondItem="Dys-2V-osF" secondAttribute="bottom" id="d1u-36-XbS"/>
+                            <constraint firstItem="TBq-Iv-7yr" firstAttribute="top" secondItem="rmD-Mg-2VH" secondAttribute="bottom" constant="8" symbolic="YES" id="eSd-Bk-npI"/>
                             <constraint firstAttribute="trailing" secondItem="5R1-S7-FiV" secondAttribute="trailing" id="o3t-07-FiA"/>
                             <constraint firstItem="TBq-Iv-7yr" firstAttribute="top" secondItem="5R1-S7-FiV" secondAttribute="bottom" constant="62" id="qrp-bL-b7f"/>
                             <constraint firstItem="5R1-S7-FiV" firstAttribute="leading" secondItem="1ao-YT-idV" secondAttribute="leading" id="soU-50-8AV"/>
@@ -867,6 +911,7 @@ Do not post photos of threats of physical harm as well as threats of theft, vand
                     <tabBarItem key="tabBarItem" title="" image="Winner" id="PD7-vu-HkO"/>
                     <connections>
                         <outlet property="winnerTableView" destination="5R1-S7-FiV" id="UyO-bh-Pzh"/>
+                        <segue destination="hhQ-Tg-X2Z" kind="show" identifier="LoggedOut" id="pSm-6V-iJa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLK-ze-QB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -911,7 +956,7 @@ Do not post photos of threats of physical harm as well as threats of theft, vand
         <image name="enterButton" width="174" height="73"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ROt-7f-fA9"/>
-        <segue reference="Fj0-N2-fHd"/>
+        <segue reference="Mu1-Z2-tro"/>
+        <segue reference="KJR-9z-WFT"/>
     </inferredMetricsTieBreakers>
 </document>

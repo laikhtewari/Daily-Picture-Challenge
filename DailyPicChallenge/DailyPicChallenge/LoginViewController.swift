@@ -29,6 +29,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        self.view.frame.origin.y = 0;
         super.viewDidAppear(true)
         if let user = PFUser.currentUser()
         {

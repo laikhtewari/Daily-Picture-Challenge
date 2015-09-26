@@ -84,6 +84,24 @@ class WinnerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func logoutTapped(sender: AnyObject) {
+        println("LOGOUTBUTTONTAPPED")
+        PFUser.logOutInBackgroundWithBlock { (error: NSError?) -> Void in
+            if let error = error
+            {
+                let alertView = UIAlertView(title: "Error", message: "Unable to logout", delegate: nil, cancelButtonTitle: "OK")
+            }
+            else
+            {
+                self.performSegueWithIdentifier("LoggedOut", sender: self)
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.removeObjectForKey("username")
+                defaults.removeObjectForKey("password")
+                println("\(PFUser.currentUser())")
+            }
+        }
+    }
 
 }
 
